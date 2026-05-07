@@ -72,6 +72,9 @@ class UpdateViewModel @Inject constructor(
                 }
             }
             UpdateCheckOutcome.Error -> {
+                if (!manual) {
+                    settingsRepository.update { current -> current.copy(lastUpdateCheckMillis = now) }
+                }
                 if (manual) {
                     events.emit(UpdateUiEvent.ShowSnackbar("Could not check for updates. Check your connection."))
                 }
