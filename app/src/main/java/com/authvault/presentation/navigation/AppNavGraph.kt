@@ -1,6 +1,7 @@
 package com.authvault.presentation.navigation
 
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavType
@@ -19,19 +20,27 @@ import com.authvault.presentation.ui.edit.EditAccountScreen
 import com.authvault.presentation.ui.edit.EditAccountViewModel
 import com.authvault.presentation.ui.main.MainScreen
 import com.authvault.presentation.ui.main.MainViewModel
+import com.authvault.presentation.ui.update.UpdateViewModel
+import com.authvault.presentation.ui.update.UpdateDialog
 import com.authvault.presentation.ui.settings.Mode
 import com.authvault.presentation.ui.settings.BackupScreen
 import com.authvault.presentation.ui.settings.SettingsScreen
 import com.authvault.presentation.ui.settings.SettingsViewModel
+import androidx.compose.runtime.collectAsState
+import androidx.compose.ui.platform.LocalContext
 
 @Composable
 fun AppNavGraph() {
     val navController = rememberNavController()
+    val updateViewModel: UpdateViewModel = hiltViewModel()
+    val updateState by updateViewModel.uiState.collectAsState()
+    val context = LocalContext.current
     NavHost(navController = navController, startDestination = Screen.Main.route) {
         composable(Screen.Main.route) {
             val viewModel = hiltViewModel<MainViewModel>()
             MainScreen(
                 viewModel = viewModel,
+                updateViewModel = updateViewModel,
                 onOpenSettings = { navController.navigate(Screen.Settings.route) },
                 onAddAccount = { navController.navigate(Screen.AddMethod.route) },
                 onOpenDetail = { accountId -> navController.navigate(Screen.EditAccount.createRoute(accountId)) },
@@ -42,6 +51,7 @@ fun AppNavGraph() {
             val viewModel = hiltViewModel<SettingsViewModel>()
             SettingsScreen(
                 viewModel = viewModel,
+                updateViewModel = updateViewModel,
                 onNavigateBack = { navController.popBackStack() },
                 onExportBackup = { navController.navigate(Screen.ExportBackup.route) },
                 onImportBackup = { navController.navigate(Screen.ImportBackup.route) }
@@ -136,5 +146,15 @@ fun AppNavGraph() {
                 onNavigateBack = { navController.popBackStack() }
             )
         }
+    }
+
+    updateState.updateInfo?.let { info ->
+        UpdateDialog(
+            updateInfo = info,
+            onUpdateNow = {
+                context.startActivity(android.content.Intent(android.content.Intent.ACTION_VIEW, android.net.Uri.parse(info.downloadUrl)))
+            },
+            onLater = { updateViewModel.dismissUpdateDialog() }
+        )
     }
 }
