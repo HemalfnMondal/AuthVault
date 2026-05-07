@@ -1,3 +1,4 @@
+com.authvault:xml/file_paths = 0x7f130000
 com.authvault:styleable/ViewPager2 = 0x7f12009c
 com.authvault:styleable/ViewBackgroundHelper = 0x7f12009b
 com.authvault:styleable/View = 0x7f12009a

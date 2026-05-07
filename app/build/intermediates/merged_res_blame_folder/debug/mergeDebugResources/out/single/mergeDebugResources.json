@@ -1,15 +1,19 @@
 [
     {
+        "merged": "com.authvault.app-debug-86:/xml_file_paths.xml.flat",
+        "source": "com.authvault.app-main-88:/xml/file_paths.xml"
+    },
+    {
         "merged": "/home/rupa/.gradle/daemon/8.6/com.authvault.app-debug-86:/mipmap-mdpi_ic_launcher_round.png.flat",
         "source": "/home/rupa/.gradle/daemon/8.6/com.authvault.app-main-88:/mipmap-mdpi/ic_launcher_round.png"
     },
     {
-        "merged": "/home/rupa/.gradle/daemon/8.6/com.authvault.app-debug-86:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "/home/rupa/.gradle/daemon/8.6/com.authvault.app-main-88:/mipmap-xxxhdpi/ic_launcher_round.png"
-    },
-    {
         "merged": "/home/rupa/.gradle/daemon/8.6/com.authvault.app-debug-86:/mipmap-xxhdpi_ic_launcher.png.flat",
         "source": "/home/rupa/.gradle/daemon/8.6/com.authvault.app-main-88:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/rupa/.gradle/daemon/8.6/com.authvault.app-debug-86:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "/home/rupa/.gradle/daemon/8.6/com.authvault.app-main-88:/mipmap-xxxhdpi/ic_launcher_round.png"
     },
     {
         "merged": "com.authvault.app-debug-86:/mipmap-mdpi_ic_launcher_round.png.flat",
@@ -56,10 +60,6 @@
         "source": "/home/rupa/.gradle/daemon/8.6/com.authvault.app-main-88:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "com.authvault.app-debug-86:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.authvault.app-main-88:/drawable/ic_launcher_background.xml"
-    },
-    {
         "merged": "/home/rupa/.gradle/daemon/8.6/com.authvault.app-debug-86:/drawable_ic_launcher_foreground.xml.flat",
         "source": "/home/rupa/.gradle/daemon/8.6/com.authvault.app-main-88:/drawable/ic_launcher_foreground.xml"
     },
@@ -80,20 +80,12 @@
         "source": "/home/rupa/.gradle/daemon/8.6/com.authvault.app-main-88:/mipmap-xhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "com.authvault.app-debug-86:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.authvault.app-main-88:/mipmap-anydpi-v26/ic_launcher_round.xml"
-    },
-    {
         "merged": "com.authvault.app-debug-86:/mipmap-hdpi_ic_launcher_round.png.flat",
         "source": "com.authvault.app-main-88:/mipmap-hdpi/ic_launcher_round.png"
     },
     {
         "merged": "/home/rupa/.gradle/daemon/8.6/com.authvault.app-debug-86:/mipmap-hdpi_ic_launcher_round.png.flat",
         "source": "/home/rupa/.gradle/daemon/8.6/com.authvault.app-main-88:/mipmap-hdpi/ic_launcher_round.png"
-    },
-    {
-        "merged": "com.authvault.app-debug-86:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.authvault.app-main-88:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
         "merged": "com.authvault.app-debug-86:/mipmap-xxxhdpi_ic_launcher_round.png.flat",

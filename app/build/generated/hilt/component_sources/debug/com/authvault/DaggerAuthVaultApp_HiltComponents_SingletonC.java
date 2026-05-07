@@ -595,6 +595,10 @@ public final class DaggerAuthVaultApp_HiltComponents_SingletonC {
 
     private final SingletonCImpl singletonCImpl = this;
 
+    private Provider<DataStore<Preferences>> provideDataStoreProvider;
+
+    private Provider<SettingsRepository> provideSettingsRepositoryProvider;
+
     private Provider<MasterKey> provideMasterKeyProvider;
 
     private Provider<byte[]> provideDatabasePassphraseProvider;
@@ -604,10 +608,6 @@ public final class DaggerAuthVaultApp_HiltComponents_SingletonC {
     private Provider<AppDatabase> provideDatabaseProvider;
 
     private Provider<AccountRepository> provideAccountRepositoryProvider;
-
-    private Provider<DataStore<Preferences>> provideDataStoreProvider;
-
-    private Provider<SettingsRepository> provideSettingsRepositoryProvider;
 
     private Provider<BackupRepository> provideBackupRepositoryProvider;
 
@@ -619,18 +619,23 @@ public final class DaggerAuthVaultApp_HiltComponents_SingletonC {
 
     @SuppressWarnings("unchecked")
     private void initialize(final ApplicationContextModule applicationContextModuleParam) {
-      this.provideMasterKeyProvider = DoubleCheck.provider(new SwitchingProvider<MasterKey>(singletonCImpl, 4));
-      this.provideDatabasePassphraseProvider = DoubleCheck.provider(new SwitchingProvider<byte[]>(singletonCImpl, 3));
-      this.provideSupportFactoryProvider = DoubleCheck.provider(new SwitchingProvider<SupportFactory>(singletonCImpl, 2));
-      this.provideDatabaseProvider = DoubleCheck.provider(new SwitchingProvider<AppDatabase>(singletonCImpl, 1));
-      this.provideAccountRepositoryProvider = DoubleCheck.provider(new SwitchingProvider<AccountRepository>(singletonCImpl, 0));
-      this.provideDataStoreProvider = DoubleCheck.provider(new SwitchingProvider<DataStore<Preferences>>(singletonCImpl, 6));
-      this.provideSettingsRepositoryProvider = DoubleCheck.provider(new SwitchingProvider<SettingsRepository>(singletonCImpl, 5));
+      this.provideDataStoreProvider = DoubleCheck.provider(new SwitchingProvider<DataStore<Preferences>>(singletonCImpl, 1));
+      this.provideSettingsRepositoryProvider = DoubleCheck.provider(new SwitchingProvider<SettingsRepository>(singletonCImpl, 0));
+      this.provideMasterKeyProvider = DoubleCheck.provider(new SwitchingProvider<MasterKey>(singletonCImpl, 6));
+      this.provideDatabasePassphraseProvider = DoubleCheck.provider(new SwitchingProvider<byte[]>(singletonCImpl, 5));
+      this.provideSupportFactoryProvider = DoubleCheck.provider(new SwitchingProvider<SupportFactory>(singletonCImpl, 4));
+      this.provideDatabaseProvider = DoubleCheck.provider(new SwitchingProvider<AppDatabase>(singletonCImpl, 3));
+      this.provideAccountRepositoryProvider = DoubleCheck.provider(new SwitchingProvider<AccountRepository>(singletonCImpl, 2));
       this.provideBackupRepositoryProvider = DoubleCheck.provider(new SwitchingProvider<BackupRepository>(singletonCImpl, 7));
     }
 
     @Override
     public void injectAuthVaultApp(AuthVaultApp authVaultApp) {
+    }
+
+    @Override
+    public SettingsRepository settingsRepository() {
+      return provideSettingsRepositoryProvider.get();
     }
 
     @Override
@@ -662,26 +667,26 @@ public final class DaggerAuthVaultApp_HiltComponents_SingletonC {
       @Override
       public T get() {
         switch (id) {
-          case 0: // com.authvault.data.repository.AccountRepository 
-          return (T) AppModule_ProvideAccountRepositoryFactory.provideAccountRepository(singletonCImpl.provideDatabaseProvider.get());
-
-          case 1: // com.authvault.data.db.AppDatabase 
-          return (T) DatabaseModule_ProvideDatabaseFactory.provideDatabase(ApplicationContextModule_ProvideContextFactory.provideContext(singletonCImpl.applicationContextModule), singletonCImpl.provideSupportFactoryProvider.get());
-
-          case 2: // net.sqlcipher.database.SupportFactory 
-          return (T) DatabaseModule_ProvideSupportFactoryFactory.provideSupportFactory(singletonCImpl.provideDatabasePassphraseProvider.get());
-
-          case 3: // byte[] 
-          return (T) DatabaseModule_ProvideDatabasePassphraseFactory.provideDatabasePassphrase(ApplicationContextModule_ProvideContextFactory.provideContext(singletonCImpl.applicationContextModule), singletonCImpl.provideMasterKeyProvider.get());
-
-          case 4: // androidx.security.crypto.MasterKey 
-          return (T) DatabaseModule_ProvideMasterKeyFactory.provideMasterKey(ApplicationContextModule_ProvideContextFactory.provideContext(singletonCImpl.applicationContextModule));
-
-          case 5: // com.authvault.data.repository.SettingsRepository 
+          case 0: // com.authvault.data.repository.SettingsRepository 
           return (T) AppModule_ProvideSettingsRepositoryFactory.provideSettingsRepository(singletonCImpl.provideDataStoreProvider.get());
 
-          case 6: // androidx.datastore.core.DataStore<androidx.datastore.preferences.core.Preferences> 
+          case 1: // androidx.datastore.core.DataStore<androidx.datastore.preferences.core.Preferences> 
           return (T) AppModule_ProvideDataStoreFactory.provideDataStore(ApplicationContextModule_ProvideContextFactory.provideContext(singletonCImpl.applicationContextModule));
+
+          case 2: // com.authvault.data.repository.AccountRepository 
+          return (T) AppModule_ProvideAccountRepositoryFactory.provideAccountRepository(singletonCImpl.provideDatabaseProvider.get());
+
+          case 3: // com.authvault.data.db.AppDatabase 
+          return (T) DatabaseModule_ProvideDatabaseFactory.provideDatabase(ApplicationContextModule_ProvideContextFactory.provideContext(singletonCImpl.applicationContextModule), singletonCImpl.provideSupportFactoryProvider.get());
+
+          case 4: // net.sqlcipher.database.SupportFactory 
+          return (T) DatabaseModule_ProvideSupportFactoryFactory.provideSupportFactory(singletonCImpl.provideDatabasePassphraseProvider.get());
+
+          case 5: // byte[] 
+          return (T) DatabaseModule_ProvideDatabasePassphraseFactory.provideDatabasePassphrase(ApplicationContextModule_ProvideContextFactory.provideContext(singletonCImpl.applicationContextModule), singletonCImpl.provideMasterKeyProvider.get());
+
+          case 6: // androidx.security.crypto.MasterKey 
+          return (T) DatabaseModule_ProvideMasterKeyFactory.provideMasterKey(ApplicationContextModule_ProvideContextFactory.provideContext(singletonCImpl.applicationContextModule));
 
           case 7: // com.authvault.data.repository.BackupRepository 
           return (T) AppModule_ProvideBackupRepositoryFactory.provideBackupRepository();

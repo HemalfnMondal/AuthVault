@@ -132,6 +132,7 @@ public final class AuthVaultApp_HiltComponents {
   )
   @Singleton
   public abstract static class SingletonC implements AuthVaultApp_GeneratedInjector,
+      MainActivityEntryPoint,
       FragmentGetContextFix.FragmentGetContextFixEntryPoint,
       HiltWrapper_ActivityRetainedComponentManager_ActivityRetainedComponentBuilderEntryPoint,
       ServiceComponentManager.ServiceComponentBuilderEntryPoint,

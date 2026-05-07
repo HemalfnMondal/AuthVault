@@ -14,257 +14,294 @@
 12    <uses-permission android:name="android.permission.CAMERA" />
 12-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:5:5-65
 12-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:5:22-62
-13    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
-13-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:6:5-72
-13-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:6:22-69
-14    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
-14-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:7:5-74
-14-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:7:22-71
-15    <uses-permission android:name="android.permission.VIBRATE" />
-15-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:8:5-66
-15-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:8:22-63
-16
-17    <permission
-17-->[androidx.core:core:1.13.1] /home/rupa/.gradle/caches/transforms-4/bd52f1e24a1f383a57012d0ceaa67877/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
-18        android:name="com.authvault.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-18-->[androidx.core:core:1.13.1] /home/rupa/.gradle/caches/transforms-4/bd52f1e24a1f383a57012d0ceaa67877/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
-19        android:protectionLevel="signature" />
-19-->[androidx.core:core:1.13.1] /home/rupa/.gradle/caches/transforms-4/bd52f1e24a1f383a57012d0ceaa67877/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
-20
-21    <uses-permission android:name="com.authvault.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" /> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
-21-->[androidx.core:core:1.13.1] /home/rupa/.gradle/caches/transforms-4/bd52f1e24a1f383a57012d0ceaa67877/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
-21-->[androidx.core:core:1.13.1] /home/rupa/.gradle/caches/transforms-4/bd52f1e24a1f383a57012d0ceaa67877/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
-22    <!-- <uses-sdk android:minSdkVersion="14"/> -->
-23    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-23-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/rupa/.gradle/caches/transforms-4/51ceef0fd492441d3c63b732a12982fa/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:25:5-79
-23-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/rupa/.gradle/caches/transforms-4/51ceef0fd492441d3c63b732a12982fa/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:25:22-76
-24
-25    <application
-25-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:10:5-29:19
-26        android:name="com.authvault.AuthVaultApp"
-26-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:11:9-37
-27        android:allowBackup="false"
-27-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:12:9-36
-28        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-28-->[androidx.core:core:1.13.1] /home/rupa/.gradle/caches/transforms-4/bd52f1e24a1f383a57012d0ceaa67877/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
-29        android:debuggable="true"
-30        android:extractNativeLibs="false"
-31        android:fullBackupContent="false"
-31-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:13:9-42
-32        android:icon="@mipmap/ic_launcher"
-32-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:14:9-43
-33        android:label="AuthVault"
-33-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:16:9-34
-34        android:roundIcon="@mipmap/ic_launcher_round"
-34-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:15:9-54
-35        android:supportsRtl="true"
-35-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:17:9-35
-36        android:theme="@style/Theme.AuthVault" >
-36-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:18:9-47
-37        <activity
-37-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:19:9-28:20
-38            android:name="com.authvault.MainActivity"
-38-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:20:13-41
-39            android:exported="true"
-39-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:21:13-36
-40            android:theme="@style/Theme.AuthVault" >
-40-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:22:13-51
-41            <intent-filter>
-41-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:23:13-27:29
-42                <action android:name="android.intent.action.MAIN" />
-42-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:24:17-69
-42-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:24:25-66
-43
-44                <category android:name="android.intent.category.LAUNCHER" />
-44-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:26:17-77
-44-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:26:27-74
-45            </intent-filter>
-46        </activity>
-47        <!--
-48        Service for holding metadata. Cannot be instantiated.
-49        Metadata will be merged from other manifests.
-50        -->
-51        <service
-51-->[androidx.camera:camera-core:1.3.1] /home/rupa/.gradle/caches/transforms-4/ec77a5864cbbb1502cbfaf419123e348/transformed/camera-core-1.3.1/AndroidManifest.xml:29:9-33:78
-52            android:name="androidx.camera.core.impl.MetadataHolderService"
-52-->[androidx.camera:camera-core:1.3.1] /home/rupa/.gradle/caches/transforms-4/ec77a5864cbbb1502cbfaf419123e348/transformed/camera-core-1.3.1/AndroidManifest.xml:30:13-75
-53            android:enabled="false"
-53-->[androidx.camera:camera-core:1.3.1] /home/rupa/.gradle/caches/transforms-4/ec77a5864cbbb1502cbfaf419123e348/transformed/camera-core-1.3.1/AndroidManifest.xml:31:13-36
-54            android:exported="false" >
-54-->[androidx.camera:camera-core:1.3.1] /home/rupa/.gradle/caches/transforms-4/ec77a5864cbbb1502cbfaf419123e348/transformed/camera-core-1.3.1/AndroidManifest.xml:32:13-37
-55            <meta-data
-55-->[androidx.camera:camera-camera2:1.3.1] /home/rupa/.gradle/caches/transforms-4/9f14b0c3f86b1f55f0fde8adac1beb03/transformed/camera-camera2-1.3.1/AndroidManifest.xml:30:13-32:89
-56                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
-56-->[androidx.camera:camera-camera2:1.3.1] /home/rupa/.gradle/caches/transforms-4/9f14b0c3f86b1f55f0fde8adac1beb03/transformed/camera-camera2-1.3.1/AndroidManifest.xml:31:17-103
-57                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
-57-->[androidx.camera:camera-camera2:1.3.1] /home/rupa/.gradle/caches/transforms-4/9f14b0c3f86b1f55f0fde8adac1beb03/transformed/camera-camera2-1.3.1/AndroidManifest.xml:32:17-86
-58        </service>
-59        <service
-59-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] /home/rupa/.gradle/caches/transforms-4/fd516a53b05184b5fb8aba086666b2ab/transformed/play-services-mlkit-barcode-scanning-18.3.0/AndroidManifest.xml:9:9-15:19
-60            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
-60-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] /home/rupa/.gradle/caches/transforms-4/fd516a53b05184b5fb8aba086666b2ab/transformed/play-services-mlkit-barcode-scanning-18.3.0/AndroidManifest.xml:10:13-91
-61            android:directBootAware="true"
-61-->[com.google.mlkit:common:18.9.0] /home/rupa/.gradle/caches/transforms-4/b788d9f7a03bb8f5e81d6d0101e9b41b/transformed/common-18.9.0/AndroidManifest.xml:17:13-43
-62            android:exported="false" >
-62-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] /home/rupa/.gradle/caches/transforms-4/fd516a53b05184b5fb8aba086666b2ab/transformed/play-services-mlkit-barcode-scanning-18.3.0/AndroidManifest.xml:11:13-37
-63            <meta-data
-63-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] /home/rupa/.gradle/caches/transforms-4/fd516a53b05184b5fb8aba086666b2ab/transformed/play-services-mlkit-barcode-scanning-18.3.0/AndroidManifest.xml:12:13-14:85
-64                android:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar"
-64-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] /home/rupa/.gradle/caches/transforms-4/fd516a53b05184b5fb8aba086666b2ab/transformed/play-services-mlkit-barcode-scanning-18.3.0/AndroidManifest.xml:13:17-120
-65                android:value="com.google.firebase.components.ComponentRegistrar" />
-65-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] /home/rupa/.gradle/caches/transforms-4/fd516a53b05184b5fb8aba086666b2ab/transformed/play-services-mlkit-barcode-scanning-18.3.0/AndroidManifest.xml:14:17-82
-66            <meta-data
-66-->[com.google.mlkit:vision-common:17.3.0] /home/rupa/.gradle/caches/transforms-4/4833e95feb7052a8bb2ca203e2b9a757/transformed/vision-common-17.3.0/AndroidManifest.xml:12:13-14:85
-67                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
-67-->[com.google.mlkit:vision-common:17.3.0] /home/rupa/.gradle/caches/transforms-4/4833e95feb7052a8bb2ca203e2b9a757/transformed/vision-common-17.3.0/AndroidManifest.xml:13:17-124
-68                android:value="com.google.firebase.components.ComponentRegistrar" />
-68-->[com.google.mlkit:vision-common:17.3.0] /home/rupa/.gradle/caches/transforms-4/4833e95feb7052a8bb2ca203e2b9a757/transformed/vision-common-17.3.0/AndroidManifest.xml:14:17-82
-69            <meta-data
-69-->[com.google.mlkit:common:18.9.0] /home/rupa/.gradle/caches/transforms-4/b788d9f7a03bb8f5e81d6d0101e9b41b/transformed/common-18.9.0/AndroidManifest.xml:20:13-22:85
-70                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
-70-->[com.google.mlkit:common:18.9.0] /home/rupa/.gradle/caches/transforms-4/b788d9f7a03bb8f5e81d6d0101e9b41b/transformed/common-18.9.0/AndroidManifest.xml:21:17-120
-71                android:value="com.google.firebase.components.ComponentRegistrar" />
-71-->[com.google.mlkit:common:18.9.0] /home/rupa/.gradle/caches/transforms-4/b788d9f7a03bb8f5e81d6d0101e9b41b/transformed/common-18.9.0/AndroidManifest.xml:22:17-82
-72        </service>
-73
-74        <provider
-74-->[com.google.mlkit:common:18.9.0] /home/rupa/.gradle/caches/transforms-4/b788d9f7a03bb8f5e81d6d0101e9b41b/transformed/common-18.9.0/AndroidManifest.xml:9:9-13:38
-75            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
-75-->[com.google.mlkit:common:18.9.0] /home/rupa/.gradle/caches/transforms-4/b788d9f7a03bb8f5e81d6d0101e9b41b/transformed/common-18.9.0/AndroidManifest.xml:10:13-78
-76            android:authorities="com.authvault.mlkitinitprovider"
-76-->[com.google.mlkit:common:18.9.0] /home/rupa/.gradle/caches/transforms-4/b788d9f7a03bb8f5e81d6d0101e9b41b/transformed/common-18.9.0/AndroidManifest.xml:11:13-69
-77            android:exported="false"
-77-->[com.google.mlkit:common:18.9.0] /home/rupa/.gradle/caches/transforms-4/b788d9f7a03bb8f5e81d6d0101e9b41b/transformed/common-18.9.0/AndroidManifest.xml:12:13-37
-78            android:initOrder="99" />
-78-->[com.google.mlkit:common:18.9.0] /home/rupa/.gradle/caches/transforms-4/b788d9f7a03bb8f5e81d6d0101e9b41b/transformed/common-18.9.0/AndroidManifest.xml:13:13-35
-79
-80        <activity
-80-->[com.google.android.gms:play-services-base:18.1.0] /home/rupa/.gradle/caches/transforms-4/f97016e3ade3b276751c0d2c4003556f/transformed/play-services-base-18.1.0/AndroidManifest.xml:20:9-22:45
-81            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-81-->[com.google.android.gms:play-services-base:18.1.0] /home/rupa/.gradle/caches/transforms-4/f97016e3ade3b276751c0d2c4003556f/transformed/play-services-base-18.1.0/AndroidManifest.xml:20:19-85
-82            android:exported="false"
-82-->[com.google.android.gms:play-services-base:18.1.0] /home/rupa/.gradle/caches/transforms-4/f97016e3ade3b276751c0d2c4003556f/transformed/play-services-base-18.1.0/AndroidManifest.xml:22:19-43
-83            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-83-->[com.google.android.gms:play-services-base:18.1.0] /home/rupa/.gradle/caches/transforms-4/f97016e3ade3b276751c0d2c4003556f/transformed/play-services-base-18.1.0/AndroidManifest.xml:21:19-78
-84
-85        <meta-data
-85-->[com.google.android.gms:play-services-basement:18.1.0] /home/rupa/.gradle/caches/transforms-4/c2f10fbae33ec6d67c54258b866f586e/transformed/play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
-86            android:name="com.google.android.gms.version"
-86-->[com.google.android.gms:play-services-basement:18.1.0] /home/rupa/.gradle/caches/transforms-4/c2f10fbae33ec6d67c54258b866f586e/transformed/play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
-87            android:value="@integer/google_play_services_version" />
-87-->[com.google.android.gms:play-services-basement:18.1.0] /home/rupa/.gradle/caches/transforms-4/c2f10fbae33ec6d67c54258b866f586e/transformed/play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
-88
-89        <activity
-89-->[androidx.compose.ui:ui-tooling-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/12af4d062272f00af29657348eb9a7b6/transformed/ui-tooling-release/AndroidManifest.xml:23:9-25:39
-90            android:name="androidx.compose.ui.tooling.PreviewActivity"
-90-->[androidx.compose.ui:ui-tooling-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/12af4d062272f00af29657348eb9a7b6/transformed/ui-tooling-release/AndroidManifest.xml:24:13-71
-91            android:exported="true" />
-91-->[androidx.compose.ui:ui-tooling-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/12af4d062272f00af29657348eb9a7b6/transformed/ui-tooling-release/AndroidManifest.xml:25:13-36
+13    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+13-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:6:5-77
+13-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:6:22-74
+14    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION" />
+14-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:7:5-94
+14-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:7:22-91
+15    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+15-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:8:5-71
+15-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:8:22-68
+16    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+16-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:9:5-72
+16-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:9:22-69
+17    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+17-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:10:5-74
+17-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:10:22-71
+18    <uses-permission android:name="android.permission.VIBRATE" />
+18-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:11:5-66
+18-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:11:22-63
+19
+20    <permission
+20-->[androidx.core:core:1.13.1] /home/rupa/.gradle/caches/transforms-4/bd52f1e24a1f383a57012d0ceaa67877/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+21        android:name="com.authvault.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+21-->[androidx.core:core:1.13.1] /home/rupa/.gradle/caches/transforms-4/bd52f1e24a1f383a57012d0ceaa67877/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+22        android:protectionLevel="signature" />
+22-->[androidx.core:core:1.13.1] /home/rupa/.gradle/caches/transforms-4/bd52f1e24a1f383a57012d0ceaa67877/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+23
+24    <uses-permission android:name="com.authvault.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" /> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+24-->[androidx.core:core:1.13.1] /home/rupa/.gradle/caches/transforms-4/bd52f1e24a1f383a57012d0ceaa67877/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+24-->[androidx.core:core:1.13.1] /home/rupa/.gradle/caches/transforms-4/bd52f1e24a1f383a57012d0ceaa67877/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+25    <!-- <uses-sdk android:minSdkVersion="14"/> -->
+26    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+26-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/rupa/.gradle/caches/transforms-4/51ceef0fd492441d3c63b732a12982fa/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:25:5-79
+26-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/rupa/.gradle/caches/transforms-4/51ceef0fd492441d3c63b732a12982fa/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:25:22-76
+27
+28    <application
+28-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:13:5-48:19
+29        android:name="com.authvault.AuthVaultApp"
+29-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:14:9-37
+30        android:allowBackup="false"
+30-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:15:9-36
+31        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+31-->[androidx.core:core:1.13.1] /home/rupa/.gradle/caches/transforms-4/bd52f1e24a1f383a57012d0ceaa67877/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
+32        android:debuggable="true"
+33        android:extractNativeLibs="false"
+34        android:fullBackupContent="false"
+34-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:16:9-42
+35        android:icon="@mipmap/ic_launcher"
+35-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:17:9-43
+36        android:label="AuthVault"
+36-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:19:9-34
+37        android:roundIcon="@mipmap/ic_launcher_round"
+37-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:18:9-54
+38        android:supportsRtl="true"
+38-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:20:9-35
+39        android:theme="@style/Theme.AuthVault" >
+39-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:21:9-47
+40        <provider
+41            android:name="androidx.core.content.FileProvider"
+41-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:23:13-62
+42            android:authorities="com.authvault.fileprovider"
+42-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:24:13-64
+43            android:exported="false"
+43-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:25:13-37
+44            android:grantUriPermissions="true" >
+44-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:26:13-47
+45            <meta-data
+45-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:27:13-29:54
+46                android:name="android.support.FILE_PROVIDER_PATHS"
+46-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:28:17-67
+47                android:resource="@xml/file_paths" />
+47-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:29:17-51
+48        </provider>
+49
+50        <service
+50-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:32:9-36:63
+51            android:name="com.authvault.service.ScreenShareService"
+51-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:33:13-55
+52            android:enabled="true"
+52-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:34:13-35
+53            android:exported="false"
+53-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:35:13-37
+54            android:foregroundServiceType="mediaProjection" />
+54-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:36:13-60
+55
+56        <activity
+56-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:38:9-47:20
+57            android:name="com.authvault.MainActivity"
+57-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:39:13-41
+58            android:exported="true"
+58-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:40:13-36
+59            android:theme="@style/Theme.AuthVault" >
+59-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:41:13-51
+60            <intent-filter>
+60-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:42:13-46:29
+61                <action android:name="android.intent.action.MAIN" />
+61-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:43:17-69
+61-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:43:25-66
+62
+63                <category android:name="android.intent.category.LAUNCHER" />
+63-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:45:17-77
+63-->/home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:45:27-74
+64            </intent-filter>
+65        </activity>
+66        <!--
+67        Service for holding metadata. Cannot be instantiated.
+68        Metadata will be merged from other manifests.
+69        -->
+70        <service
+70-->[androidx.camera:camera-core:1.3.1] /home/rupa/.gradle/caches/transforms-4/ec77a5864cbbb1502cbfaf419123e348/transformed/camera-core-1.3.1/AndroidManifest.xml:29:9-33:78
+71            android:name="androidx.camera.core.impl.MetadataHolderService"
+71-->[androidx.camera:camera-core:1.3.1] /home/rupa/.gradle/caches/transforms-4/ec77a5864cbbb1502cbfaf419123e348/transformed/camera-core-1.3.1/AndroidManifest.xml:30:13-75
+72            android:enabled="false"
+72-->[androidx.camera:camera-core:1.3.1] /home/rupa/.gradle/caches/transforms-4/ec77a5864cbbb1502cbfaf419123e348/transformed/camera-core-1.3.1/AndroidManifest.xml:31:13-36
+73            android:exported="false" >
+73-->[androidx.camera:camera-core:1.3.1] /home/rupa/.gradle/caches/transforms-4/ec77a5864cbbb1502cbfaf419123e348/transformed/camera-core-1.3.1/AndroidManifest.xml:32:13-37
+74            <meta-data
+74-->[androidx.camera:camera-camera2:1.3.1] /home/rupa/.gradle/caches/transforms-4/9f14b0c3f86b1f55f0fde8adac1beb03/transformed/camera-camera2-1.3.1/AndroidManifest.xml:30:13-32:89
+75                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+75-->[androidx.camera:camera-camera2:1.3.1] /home/rupa/.gradle/caches/transforms-4/9f14b0c3f86b1f55f0fde8adac1beb03/transformed/camera-camera2-1.3.1/AndroidManifest.xml:31:17-103
+76                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+76-->[androidx.camera:camera-camera2:1.3.1] /home/rupa/.gradle/caches/transforms-4/9f14b0c3f86b1f55f0fde8adac1beb03/transformed/camera-camera2-1.3.1/AndroidManifest.xml:32:17-86
+77        </service>
+78        <service
+78-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] /home/rupa/.gradle/caches/transforms-4/fd516a53b05184b5fb8aba086666b2ab/transformed/play-services-mlkit-barcode-scanning-18.3.0/AndroidManifest.xml:9:9-15:19
+79            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+79-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] /home/rupa/.gradle/caches/transforms-4/fd516a53b05184b5fb8aba086666b2ab/transformed/play-services-mlkit-barcode-scanning-18.3.0/AndroidManifest.xml:10:13-91
+80            android:directBootAware="true"
+80-->[com.google.mlkit:common:18.9.0] /home/rupa/.gradle/caches/transforms-4/b788d9f7a03bb8f5e81d6d0101e9b41b/transformed/common-18.9.0/AndroidManifest.xml:17:13-43
+81            android:exported="false" >
+81-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] /home/rupa/.gradle/caches/transforms-4/fd516a53b05184b5fb8aba086666b2ab/transformed/play-services-mlkit-barcode-scanning-18.3.0/AndroidManifest.xml:11:13-37
+82            <meta-data
+82-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] /home/rupa/.gradle/caches/transforms-4/fd516a53b05184b5fb8aba086666b2ab/transformed/play-services-mlkit-barcode-scanning-18.3.0/AndroidManifest.xml:12:13-14:85
+83                android:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar"
+83-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] /home/rupa/.gradle/caches/transforms-4/fd516a53b05184b5fb8aba086666b2ab/transformed/play-services-mlkit-barcode-scanning-18.3.0/AndroidManifest.xml:13:17-120
+84                android:value="com.google.firebase.components.ComponentRegistrar" />
+84-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] /home/rupa/.gradle/caches/transforms-4/fd516a53b05184b5fb8aba086666b2ab/transformed/play-services-mlkit-barcode-scanning-18.3.0/AndroidManifest.xml:14:17-82
+85            <meta-data
+85-->[com.google.mlkit:vision-common:17.3.0] /home/rupa/.gradle/caches/transforms-4/4833e95feb7052a8bb2ca203e2b9a757/transformed/vision-common-17.3.0/AndroidManifest.xml:12:13-14:85
+86                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
+86-->[com.google.mlkit:vision-common:17.3.0] /home/rupa/.gradle/caches/transforms-4/4833e95feb7052a8bb2ca203e2b9a757/transformed/vision-common-17.3.0/AndroidManifest.xml:13:17-124
+87                android:value="com.google.firebase.components.ComponentRegistrar" />
+87-->[com.google.mlkit:vision-common:17.3.0] /home/rupa/.gradle/caches/transforms-4/4833e95feb7052a8bb2ca203e2b9a757/transformed/vision-common-17.3.0/AndroidManifest.xml:14:17-82
+88            <meta-data
+88-->[com.google.mlkit:common:18.9.0] /home/rupa/.gradle/caches/transforms-4/b788d9f7a03bb8f5e81d6d0101e9b41b/transformed/common-18.9.0/AndroidManifest.xml:20:13-22:85
+89                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+89-->[com.google.mlkit:common:18.9.0] /home/rupa/.gradle/caches/transforms-4/b788d9f7a03bb8f5e81d6d0101e9b41b/transformed/common-18.9.0/AndroidManifest.xml:21:17-120
+90                android:value="com.google.firebase.components.ComponentRegistrar" />
+90-->[com.google.mlkit:common:18.9.0] /home/rupa/.gradle/caches/transforms-4/b788d9f7a03bb8f5e81d6d0101e9b41b/transformed/common-18.9.0/AndroidManifest.xml:22:17-82
+91        </service>
 92
 93        <provider
-93-->[androidx.lifecycle:lifecycle-process:2.7.0] /home/rupa/.gradle/caches/transforms-4/7a683566944ff58760cee52d359412ee/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:24:9-32:20
-94            android:name="androidx.startup.InitializationProvider"
-94-->[androidx.lifecycle:lifecycle-process:2.7.0] /home/rupa/.gradle/caches/transforms-4/7a683566944ff58760cee52d359412ee/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:25:13-67
-95            android:authorities="com.authvault.androidx-startup"
-95-->[androidx.lifecycle:lifecycle-process:2.7.0] /home/rupa/.gradle/caches/transforms-4/7a683566944ff58760cee52d359412ee/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:26:13-68
-96            android:exported="false" >
-96-->[androidx.lifecycle:lifecycle-process:2.7.0] /home/rupa/.gradle/caches/transforms-4/7a683566944ff58760cee52d359412ee/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:27:13-37
-97            <meta-data
-97-->[androidx.lifecycle:lifecycle-process:2.7.0] /home/rupa/.gradle/caches/transforms-4/7a683566944ff58760cee52d359412ee/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
-98                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-98-->[androidx.lifecycle:lifecycle-process:2.7.0] /home/rupa/.gradle/caches/transforms-4/7a683566944ff58760cee52d359412ee/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
-99                android:value="androidx.startup" />
-99-->[androidx.lifecycle:lifecycle-process:2.7.0] /home/rupa/.gradle/caches/transforms-4/7a683566944ff58760cee52d359412ee/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
-100            <meta-data
-100-->[androidx.emoji2:emoji2:1.3.0] /home/rupa/.gradle/caches/transforms-4/ad9c1ce0932180eaa17e9fe798af9148/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
-101                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-101-->[androidx.emoji2:emoji2:1.3.0] /home/rupa/.gradle/caches/transforms-4/ad9c1ce0932180eaa17e9fe798af9148/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
-102                android:value="androidx.startup" />
-102-->[androidx.emoji2:emoji2:1.3.0] /home/rupa/.gradle/caches/transforms-4/ad9c1ce0932180eaa17e9fe798af9148/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
-103            <meta-data
-103-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
-104                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-104-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
-105                android:value="androidx.startup" />
-105-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
-106        </provider>
+93-->[com.google.mlkit:common:18.9.0] /home/rupa/.gradle/caches/transforms-4/b788d9f7a03bb8f5e81d6d0101e9b41b/transformed/common-18.9.0/AndroidManifest.xml:9:9-13:38
+94            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+94-->[com.google.mlkit:common:18.9.0] /home/rupa/.gradle/caches/transforms-4/b788d9f7a03bb8f5e81d6d0101e9b41b/transformed/common-18.9.0/AndroidManifest.xml:10:13-78
+95            android:authorities="com.authvault.mlkitinitprovider"
+95-->[com.google.mlkit:common:18.9.0] /home/rupa/.gradle/caches/transforms-4/b788d9f7a03bb8f5e81d6d0101e9b41b/transformed/common-18.9.0/AndroidManifest.xml:11:13-69
+96            android:exported="false"
+96-->[com.google.mlkit:common:18.9.0] /home/rupa/.gradle/caches/transforms-4/b788d9f7a03bb8f5e81d6d0101e9b41b/transformed/common-18.9.0/AndroidManifest.xml:12:13-37
+97            android:initOrder="99" />
+97-->[com.google.mlkit:common:18.9.0] /home/rupa/.gradle/caches/transforms-4/b788d9f7a03bb8f5e81d6d0101e9b41b/transformed/common-18.9.0/AndroidManifest.xml:13:13-35
+98
+99        <activity
+99-->[com.google.android.gms:play-services-base:18.1.0] /home/rupa/.gradle/caches/transforms-4/f97016e3ade3b276751c0d2c4003556f/transformed/play-services-base-18.1.0/AndroidManifest.xml:20:9-22:45
+100            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+100-->[com.google.android.gms:play-services-base:18.1.0] /home/rupa/.gradle/caches/transforms-4/f97016e3ade3b276751c0d2c4003556f/transformed/play-services-base-18.1.0/AndroidManifest.xml:20:19-85
+101            android:exported="false"
+101-->[com.google.android.gms:play-services-base:18.1.0] /home/rupa/.gradle/caches/transforms-4/f97016e3ade3b276751c0d2c4003556f/transformed/play-services-base-18.1.0/AndroidManifest.xml:22:19-43
+102            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+102-->[com.google.android.gms:play-services-base:18.1.0] /home/rupa/.gradle/caches/transforms-4/f97016e3ade3b276751c0d2c4003556f/transformed/play-services-base-18.1.0/AndroidManifest.xml:21:19-78
+103
+104        <meta-data
+104-->[com.google.android.gms:play-services-basement:18.1.0] /home/rupa/.gradle/caches/transforms-4/c2f10fbae33ec6d67c54258b866f586e/transformed/play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
+105            android:name="com.google.android.gms.version"
+105-->[com.google.android.gms:play-services-basement:18.1.0] /home/rupa/.gradle/caches/transforms-4/c2f10fbae33ec6d67c54258b866f586e/transformed/play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
+106            android:value="@integer/google_play_services_version" />
+106-->[com.google.android.gms:play-services-basement:18.1.0] /home/rupa/.gradle/caches/transforms-4/c2f10fbae33ec6d67c54258b866f586e/transformed/play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
 107
-108        <service
-108-->[androidx.room:room-runtime:2.6.1] /home/rupa/.gradle/caches/transforms-4/7df126978c2e982a4c9efbc0d5b56228/transformed/room-runtime-2.6.1/AndroidManifest.xml:24:9-28:63
-109            android:name="androidx.room.MultiInstanceInvalidationService"
-109-->[androidx.room:room-runtime:2.6.1] /home/rupa/.gradle/caches/transforms-4/7df126978c2e982a4c9efbc0d5b56228/transformed/room-runtime-2.6.1/AndroidManifest.xml:25:13-74
-110            android:directBootAware="true"
-110-->[androidx.room:room-runtime:2.6.1] /home/rupa/.gradle/caches/transforms-4/7df126978c2e982a4c9efbc0d5b56228/transformed/room-runtime-2.6.1/AndroidManifest.xml:26:13-43
-111            android:exported="false" />
-111-->[androidx.room:room-runtime:2.6.1] /home/rupa/.gradle/caches/transforms-4/7df126978c2e982a4c9efbc0d5b56228/transformed/room-runtime-2.6.1/AndroidManifest.xml:27:13-37
-112
-113        <receiver
-113-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
-114            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-114-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
-115            android:directBootAware="false"
-115-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
-116            android:enabled="true"
-116-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
-117            android:exported="true"
-117-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
-118            android:permission="android.permission.DUMP" >
-118-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
-119            <intent-filter>
-119-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
-120                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-120-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
-120-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
-121            </intent-filter>
-122            <intent-filter>
-122-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
-123                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-123-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
-123-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
-124            </intent-filter>
-125            <intent-filter>
-125-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
-126                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-126-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
-126-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
-127            </intent-filter>
-128            <intent-filter>
-128-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
-129                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-129-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
-129-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
-130            </intent-filter>
-131        </receiver>
-132
-133        <service
-133-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/rupa/.gradle/caches/transforms-4/51ceef0fd492441d3c63b732a12982fa/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:29:9-35:19
-134            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
-134-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/rupa/.gradle/caches/transforms-4/51ceef0fd492441d3c63b732a12982fa/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:30:13-103
-135            android:exported="false" >
-135-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/rupa/.gradle/caches/transforms-4/51ceef0fd492441d3c63b732a12982fa/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:31:13-37
-136            <meta-data
-136-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/rupa/.gradle/caches/transforms-4/51ceef0fd492441d3c63b732a12982fa/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:32:13-34:39
-137                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
-137-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/rupa/.gradle/caches/transforms-4/51ceef0fd492441d3c63b732a12982fa/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:33:17-94
-138                android:value="cct" />
-138-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/rupa/.gradle/caches/transforms-4/51ceef0fd492441d3c63b732a12982fa/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:34:17-36
-139        </service>
-140        <service
-140-->[com.google.android.datatransport:transport-runtime:2.2.6] /home/rupa/.gradle/caches/transforms-4/76b48fe2b95b4e0e83785f9e713b6fd3/transformed/transport-runtime-2.2.6/AndroidManifest.xml:26:9-30:19
-141            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
-141-->[com.google.android.datatransport:transport-runtime:2.2.6] /home/rupa/.gradle/caches/transforms-4/76b48fe2b95b4e0e83785f9e713b6fd3/transformed/transport-runtime-2.2.6/AndroidManifest.xml:27:13-117
-142            android:exported="false"
-142-->[com.google.android.datatransport:transport-runtime:2.2.6] /home/rupa/.gradle/caches/transforms-4/76b48fe2b95b4e0e83785f9e713b6fd3/transformed/transport-runtime-2.2.6/AndroidManifest.xml:28:13-37
-143            android:permission="android.permission.BIND_JOB_SERVICE" >
-143-->[com.google.android.datatransport:transport-runtime:2.2.6] /home/rupa/.gradle/caches/transforms-4/76b48fe2b95b4e0e83785f9e713b6fd3/transformed/transport-runtime-2.2.6/AndroidManifest.xml:29:13-69
-144        </service>
-145
-146        <receiver
-146-->[com.google.android.datatransport:transport-runtime:2.2.6] /home/rupa/.gradle/caches/transforms-4/76b48fe2b95b4e0e83785f9e713b6fd3/transformed/transport-runtime-2.2.6/AndroidManifest.xml:32:9-34:40
-147            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
-147-->[com.google.android.datatransport:transport-runtime:2.2.6] /home/rupa/.gradle/caches/transforms-4/76b48fe2b95b4e0e83785f9e713b6fd3/transformed/transport-runtime-2.2.6/AndroidManifest.xml:33:13-132
-148            android:exported="false" />
-148-->[com.google.android.datatransport:transport-runtime:2.2.6] /home/rupa/.gradle/caches/transforms-4/76b48fe2b95b4e0e83785f9e713b6fd3/transformed/transport-runtime-2.2.6/AndroidManifest.xml:34:13-37
-149    </application>
-150
-151</manifest>
+108        <activity
+108-->[androidx.compose.ui:ui-tooling-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/12af4d062272f00af29657348eb9a7b6/transformed/ui-tooling-release/AndroidManifest.xml:23:9-25:39
+109            android:name="androidx.compose.ui.tooling.PreviewActivity"
+109-->[androidx.compose.ui:ui-tooling-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/12af4d062272f00af29657348eb9a7b6/transformed/ui-tooling-release/AndroidManifest.xml:24:13-71
+110            android:exported="true" />
+110-->[androidx.compose.ui:ui-tooling-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/12af4d062272f00af29657348eb9a7b6/transformed/ui-tooling-release/AndroidManifest.xml:25:13-36
+111
+112        <provider
+112-->[androidx.lifecycle:lifecycle-process:2.7.0] /home/rupa/.gradle/caches/transforms-4/7a683566944ff58760cee52d359412ee/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:24:9-32:20
+113            android:name="androidx.startup.InitializationProvider"
+113-->[androidx.lifecycle:lifecycle-process:2.7.0] /home/rupa/.gradle/caches/transforms-4/7a683566944ff58760cee52d359412ee/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:25:13-67
+114            android:authorities="com.authvault.androidx-startup"
+114-->[androidx.lifecycle:lifecycle-process:2.7.0] /home/rupa/.gradle/caches/transforms-4/7a683566944ff58760cee52d359412ee/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:26:13-68
+115            android:exported="false" >
+115-->[androidx.lifecycle:lifecycle-process:2.7.0] /home/rupa/.gradle/caches/transforms-4/7a683566944ff58760cee52d359412ee/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:27:13-37
+116            <meta-data
+116-->[androidx.lifecycle:lifecycle-process:2.7.0] /home/rupa/.gradle/caches/transforms-4/7a683566944ff58760cee52d359412ee/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
+117                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+117-->[androidx.lifecycle:lifecycle-process:2.7.0] /home/rupa/.gradle/caches/transforms-4/7a683566944ff58760cee52d359412ee/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
+118                android:value="androidx.startup" />
+118-->[androidx.lifecycle:lifecycle-process:2.7.0] /home/rupa/.gradle/caches/transforms-4/7a683566944ff58760cee52d359412ee/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
+119            <meta-data
+119-->[androidx.emoji2:emoji2:1.3.0] /home/rupa/.gradle/caches/transforms-4/ad9c1ce0932180eaa17e9fe798af9148/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+120                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+120-->[androidx.emoji2:emoji2:1.3.0] /home/rupa/.gradle/caches/transforms-4/ad9c1ce0932180eaa17e9fe798af9148/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
+121                android:value="androidx.startup" />
+121-->[androidx.emoji2:emoji2:1.3.0] /home/rupa/.gradle/caches/transforms-4/ad9c1ce0932180eaa17e9fe798af9148/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
+122            <meta-data
+122-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+123                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+123-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+124                android:value="androidx.startup" />
+124-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+125        </provider>
+126
+127        <service
+127-->[androidx.room:room-runtime:2.6.1] /home/rupa/.gradle/caches/transforms-4/7df126978c2e982a4c9efbc0d5b56228/transformed/room-runtime-2.6.1/AndroidManifest.xml:24:9-28:63
+128            android:name="androidx.room.MultiInstanceInvalidationService"
+128-->[androidx.room:room-runtime:2.6.1] /home/rupa/.gradle/caches/transforms-4/7df126978c2e982a4c9efbc0d5b56228/transformed/room-runtime-2.6.1/AndroidManifest.xml:25:13-74
+129            android:directBootAware="true"
+129-->[androidx.room:room-runtime:2.6.1] /home/rupa/.gradle/caches/transforms-4/7df126978c2e982a4c9efbc0d5b56228/transformed/room-runtime-2.6.1/AndroidManifest.xml:26:13-43
+130            android:exported="false" />
+130-->[androidx.room:room-runtime:2.6.1] /home/rupa/.gradle/caches/transforms-4/7df126978c2e982a4c9efbc0d5b56228/transformed/room-runtime-2.6.1/AndroidManifest.xml:27:13-37
+131
+132        <receiver
+132-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+133            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+133-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+134            android:directBootAware="false"
+134-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+135            android:enabled="true"
+135-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+136            android:exported="true"
+136-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+137            android:permission="android.permission.DUMP" >
+137-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+138            <intent-filter>
+138-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+139                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+139-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+139-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+140            </intent-filter>
+141            <intent-filter>
+141-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+142                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+142-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+142-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+143            </intent-filter>
+144            <intent-filter>
+144-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+145                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+145-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+145-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+146            </intent-filter>
+147            <intent-filter>
+147-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+148                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+148-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+148-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+149            </intent-filter>
+150        </receiver>
+151
+152        <service
+152-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/rupa/.gradle/caches/transforms-4/51ceef0fd492441d3c63b732a12982fa/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:29:9-35:19
+153            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+153-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/rupa/.gradle/caches/transforms-4/51ceef0fd492441d3c63b732a12982fa/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:30:13-103
+154            android:exported="false" >
+154-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/rupa/.gradle/caches/transforms-4/51ceef0fd492441d3c63b732a12982fa/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:31:13-37
+155            <meta-data
+155-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/rupa/.gradle/caches/transforms-4/51ceef0fd492441d3c63b732a12982fa/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:32:13-34:39
+156                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+156-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/rupa/.gradle/caches/transforms-4/51ceef0fd492441d3c63b732a12982fa/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:33:17-94
+157                android:value="cct" />
+157-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/rupa/.gradle/caches/transforms-4/51ceef0fd492441d3c63b732a12982fa/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:34:17-36
+158        </service>
+159        <service
+159-->[com.google.android.datatransport:transport-runtime:2.2.6] /home/rupa/.gradle/caches/transforms-4/76b48fe2b95b4e0e83785f9e713b6fd3/transformed/transport-runtime-2.2.6/AndroidManifest.xml:26:9-30:19
+160            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+160-->[com.google.android.datatransport:transport-runtime:2.2.6] /home/rupa/.gradle/caches/transforms-4/76b48fe2b95b4e0e83785f9e713b6fd3/transformed/transport-runtime-2.2.6/AndroidManifest.xml:27:13-117
+161            android:exported="false"
+161-->[com.google.android.datatransport:transport-runtime:2.2.6] /home/rupa/.gradle/caches/transforms-4/76b48fe2b95b4e0e83785f9e713b6fd3/transformed/transport-runtime-2.2.6/AndroidManifest.xml:28:13-37
+162            android:permission="android.permission.BIND_JOB_SERVICE" >
+162-->[com.google.android.datatransport:transport-runtime:2.2.6] /home/rupa/.gradle/caches/transforms-4/76b48fe2b95b4e0e83785f9e713b6fd3/transformed/transport-runtime-2.2.6/AndroidManifest.xml:29:13-69
+163        </service>
+164
+165        <receiver
+165-->[com.google.android.datatransport:transport-runtime:2.2.6] /home/rupa/.gradle/caches/transforms-4/76b48fe2b95b4e0e83785f9e713b6fd3/transformed/transport-runtime-2.2.6/AndroidManifest.xml:32:9-34:40
+166            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+166-->[com.google.android.datatransport:transport-runtime:2.2.6] /home/rupa/.gradle/caches/transforms-4/76b48fe2b95b4e0e83785f9e713b6fd3/transformed/transport-runtime-2.2.6/AndroidManifest.xml:33:13-132
+167            android:exported="false" />
+167-->[com.google.android.datatransport:transport-runtime:2.2.6] /home/rupa/.gradle/caches/transforms-4/76b48fe2b95b4e0e83785f9e713b6fd3/transformed/transport-runtime-2.2.6/AndroidManifest.xml:34:13-37
+168    </application>
+169
+170</manifest>

@@ -26,7 +26,7 @@ public final class SettingsRepository {
         return null;
     }
     
-    @kotlin.Metadata(mv = {1, 9, 0}, k = 1, xi = 48, d1 = {"\u0000(\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0002\b\u0005\n\u0002\u0010\b\n\u0002\b\u0004\n\u0002\u0010\u000e\n\u0002\b\u0006\b\u00c2\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002\u00a2\u0006\u0002\u0010\u0002R\u0017\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0006\u0010\u0007R\u0017\u0010\b\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004\u00a2\u0006\b\n\u0000\u001a\u0004\b\t\u0010\u0007R\u0017\u0010\n\u001a\b\u0012\u0004\u0012\u00020\u000b0\u0004\u00a2\u0006\b\n\u0000\u001a\u0004\b\f\u0010\u0007R\u0017\u0010\r\u001a\b\u0012\u0004\u0012\u00020\u000b0\u0004\u00a2\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\u0007R\u0017\u0010\u000f\u001a\b\u0012\u0004\u0012\u00020\u00100\u0004\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0011\u0010\u0007R\u0017\u0010\u0012\u001a\b\u0012\u0004\u0012\u00020\u000b0\u0004\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0013\u0010\u0007R\u0017\u0010\u0014\u001a\b\u0012\u0004\u0012\u00020\u00100\u0004\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0015\u0010\u0007\u00a8\u0006\u0016"}, d2 = {"Lcom/authvault/data/repository/SettingsRepository$Keys;", "", "()V", "APP_LOCK", "Landroidx/datastore/preferences/core/Preferences$Key;", "", "getAPP_LOCK", "()Landroidx/datastore/preferences/core/Preferences$Key;", "AUTO_CLEAR", "getAUTO_CLEAR", "AUTO_LOCK", "", "getAUTO_LOCK", "CLIP_DELAY", "getCLIP_DELAY", "DEFAULT_ALG", "", "getDEFAULT_ALG", "DEFAULT_DIGITS", "getDEFAULT_DIGITS", "SORT_ORDER", "getSORT_ORDER", "app_debug"})
+    @kotlin.Metadata(mv = {1, 9, 0}, k = 1, xi = 48, d1 = {"\u0000(\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0002\b\u0007\n\u0002\u0010\b\n\u0002\b\u0004\n\u0002\u0010\u000e\n\u0002\b\b\b\u00c2\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002\u00a2\u0006\u0002\u0010\u0002R\u0017\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0006\u0010\u0007R\u0017\u0010\b\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004\u00a2\u0006\b\n\u0000\u001a\u0004\b\t\u0010\u0007R\u0017\u0010\n\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004\u00a2\u0006\b\n\u0000\u001a\u0004\b\u000b\u0010\u0007R\u0017\u0010\f\u001a\b\u0012\u0004\u0012\u00020\r0\u0004\u00a2\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\u0007R\u0017\u0010\u000f\u001a\b\u0012\u0004\u0012\u00020\r0\u0004\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0010\u0010\u0007R\u0017\u0010\u0011\u001a\b\u0012\u0004\u0012\u00020\u00120\u0004\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0013\u0010\u0007R\u0017\u0010\u0014\u001a\b\u0012\u0004\u0012\u00020\r0\u0004\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0015\u0010\u0007R\u0017\u0010\u0016\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0017\u0010\u0007R\u0017\u0010\u0018\u001a\b\u0012\u0004\u0012\u00020\u00120\u0004\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0019\u0010\u0007\u00a8\u0006\u001a"}, d2 = {"Lcom/authvault/data/repository/SettingsRepository$Keys;", "", "()V", "ALLOW_SCREENSHOTS", "Landroidx/datastore/preferences/core/Preferences$Key;", "", "getALLOW_SCREENSHOTS", "()Landroidx/datastore/preferences/core/Preferences$Key;", "APP_LOCK", "getAPP_LOCK", "AUTO_CLEAR", "getAUTO_CLEAR", "AUTO_LOCK", "", "getAUTO_LOCK", "CLIP_DELAY", "getCLIP_DELAY", "DEFAULT_ALG", "", "getDEFAULT_ALG", "DEFAULT_DIGITS", "getDEFAULT_DIGITS", "SCREENSHOT_WARNING_SHOWN", "getSCREENSHOT_WARNING_SHOWN", "SORT_ORDER", "getSORT_ORDER", "app_debug"})
     static final class Keys {
         @org.jetbrains.annotations.NotNull()
         private static final androidx.datastore.preferences.core.Preferences.Key<java.lang.Boolean> APP_LOCK = null;
@@ -36,6 +36,10 @@ public final class SettingsRepository {
         private static final androidx.datastore.preferences.core.Preferences.Key<java.lang.Boolean> AUTO_CLEAR = null;
         @org.jetbrains.annotations.NotNull()
         private static final androidx.datastore.preferences.core.Preferences.Key<java.lang.Integer> CLIP_DELAY = null;
+        @org.jetbrains.annotations.NotNull()
+        private static final androidx.datastore.preferences.core.Preferences.Key<java.lang.Boolean> ALLOW_SCREENSHOTS = null;
+        @org.jetbrains.annotations.NotNull()
+        private static final androidx.datastore.preferences.core.Preferences.Key<java.lang.Boolean> SCREENSHOT_WARNING_SHOWN = null;
         @org.jetbrains.annotations.NotNull()
         private static final androidx.datastore.preferences.core.Preferences.Key<java.lang.String> SORT_ORDER = null;
         @org.jetbrains.annotations.NotNull()
@@ -66,6 +70,16 @@ public final class SettingsRepository {
         
         @org.jetbrains.annotations.NotNull()
         public final androidx.datastore.preferences.core.Preferences.Key<java.lang.Integer> getCLIP_DELAY() {
+            return null;
+        }
+        
+        @org.jetbrains.annotations.NotNull()
+        public final androidx.datastore.preferences.core.Preferences.Key<java.lang.Boolean> getALLOW_SCREENSHOTS() {
+            return null;
+        }
+        
+        @org.jetbrains.annotations.NotNull()
+        public final androidx.datastore.preferences.core.Preferences.Key<java.lang.Boolean> getSCREENSHOT_WARNING_SHOWN() {
             return null;
         }
         

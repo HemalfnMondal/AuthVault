@@ -10,7 +10,6 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.ui.Modifier
@@ -24,25 +23,57 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.core.view.WindowCompat
+import com.authvault.data.repository.SettingsRepository
 import com.authvault.presentation.navigation.AppNavGraph
 import com.authvault.presentation.theme.AuthVaultTheme
+import dagger.hilt.EntryPoint
+import dagger.hilt.InstallIn
 import dagger.hilt.android.AndroidEntryPoint
+import dagger.hilt.android.EntryPointAccessors
+import dagger.hilt.components.SingletonComponent
+import kotlinx.coroutines.flow.first
+import kotlinx.coroutines.runBlocking
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
+    private val settingsRepository: SettingsRepository by lazy(LazyThreadSafetyMode.NONE) {
+        EntryPointAccessors.fromApplication(
+            applicationContext,
+            MainActivityEntryPoint::class.java
+        ).settingsRepository()
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
+        // Apply persisted policy before first frame to avoid secure/non-secure flicker.
+        val allowScreenshots = runBlocking { settingsRepository.state.first().allowScreenshots }
+        applyScreenshotPolicy(allowScreenshots)
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        window.setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE)
         WindowCompat.setDecorFitsSystemWindows(window, false)
         setContent {
             AuthVaultTheme {
-                AuthGate {
+                AuthGate(
+                    onAllowScreenshotsChanged = ::applyScreenshotPolicy
+                ) {
                     AppRoot()
                 }
             }
         }
     }
+
+    private fun applyScreenshotPolicy(allowScreenshots: Boolean) {
+        if (allowScreenshots) {
+            window.clearFlags(WindowManager.LayoutParams.FLAG_SECURE)
+        } else {
+            window.addFlags(WindowManager.LayoutParams.FLAG_SECURE)
+        }
+    }
+}
+
+@EntryPoint
+@InstallIn(SingletonComponent::class)
+interface MainActivityEntryPoint {
+    fun settingsRepository(): SettingsRepository
 }
 
 @Composable
@@ -51,7 +82,10 @@ private fun AppRoot() {
 }
 
 @Composable
-private fun AuthGate(content: @Composable () -> Unit) {
+private fun AuthGate(
+    onAllowScreenshotsChanged: (Boolean) -> Unit,
+    content: @Composable () -> Unit
+) {
     // Simple biometric gate: if app lock enabled, prompt biometric before showing app
     val settingsViewModel: com.authvault.presentation.ui.settings.SettingsViewModel = androidx.hilt.navigation.compose.hiltViewModel()
     val settings by settingsViewModel.settingsState.collectAsState(initial = com.authvault.data.repository.SettingsState())
@@ -61,6 +95,10 @@ private fun AuthGate(content: @Composable () -> Unit) {
     // react to settings change
     LaunchedEffect(settings.appLockEnabled) {
         if (settings.appLockEnabled) unlocked = false else unlocked = true
+    }
+
+    LaunchedEffect(settings.allowScreenshots) {
+        onAllowScreenshotsChanged(settings.allowScreenshots)
     }
 
     if (!unlocked) {

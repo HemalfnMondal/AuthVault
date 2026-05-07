@@ -48,7 +48,9 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.authvault.presentation.theme.Cyan
 import com.authvault.presentation.ui.common.QrCodeGenerator
+import com.authvault.presentation.ui.common.SecureScreen
 import com.authvault.presentation.ui.common.ServiceIconView
+import com.authvault.presentation.ui.settings.SettingsViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -58,7 +60,10 @@ fun EditAccountScreen(
     onSaved: () -> Unit
 ) {
     val state by viewModel.uiState.collectAsState()
+    val settingsViewModel: SettingsViewModel = hiltViewModel()
+    val settings by settingsViewModel.settingsState.collectAsState()
     val snackbarHostState = remember { SnackbarHostState() }
+    SecureScreen(forceSecure = state.secretVisible, baseSecure = !settings.allowScreenshots)
 
     LaunchedEffect(Unit) {
         viewModel.uiEvents.collect { event ->
