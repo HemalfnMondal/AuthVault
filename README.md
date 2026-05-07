@@ -30,8 +30,6 @@ It is built with Kotlin, Jetpack Compose, Room, Hilt, CameraX, ML Kit, ZXing, Co
   <img width="250" alt="Screenshot 3" src="https://github.com/user-attachments/assets/0146c698-0f5a-4037-8f68-88ffc4f1d344" />
 </div>
 
-![Visitors](https://visitor-badge.laobi.icu/badge?page_id=HemalfnMondal.AuthVault)
-![Downloads](https://img.shields.io/github/downloads/HemalfnMondal/AuthVault/total)
 
 ## Tech Stack
 
