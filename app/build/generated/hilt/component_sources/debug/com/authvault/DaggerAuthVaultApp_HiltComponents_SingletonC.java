@@ -14,6 +14,7 @@ import com.authvault.data.db.AppDatabase;
 import com.authvault.data.repository.AccountRepository;
 import com.authvault.data.repository.BackupRepository;
 import com.authvault.data.repository.SettingsRepository;
+import com.authvault.data.update.UpdateChecker;
 import com.authvault.di.AppModule_ProvideAccountRepositoryFactory;
 import com.authvault.di.AppModule_ProvideBackupRepositoryFactory;
 import com.authvault.di.AppModule_ProvideDataStoreFactory;
@@ -38,6 +39,8 @@ import com.authvault.presentation.ui.main.MainViewModel;
 import com.authvault.presentation.ui.main.MainViewModel_HiltModules_KeyModule_ProvideFactory;
 import com.authvault.presentation.ui.settings.SettingsViewModel;
 import com.authvault.presentation.ui.settings.SettingsViewModel_HiltModules_KeyModule_ProvideFactory;
+import com.authvault.presentation.ui.update.UpdateViewModel;
+import com.authvault.presentation.ui.update.UpdateViewModel_HiltModules_KeyModule_ProvideFactory;
 import dagger.hilt.android.ActivityRetainedLifecycle;
 import dagger.hilt.android.ViewModelLifecycle;
 import dagger.hilt.android.internal.builders.ActivityComponentBuilder;
@@ -391,7 +394,7 @@ public final class DaggerAuthVaultApp_HiltComponents_SingletonC {
 
     @Override
     public Set<String> getViewModelKeys() {
-      return SetBuilder.<String>newSetBuilder(5).add(AddViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(DetailViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(EditAccountViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(MainViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(SettingsViewModel_HiltModules_KeyModule_ProvideFactory.provide()).build();
+      return SetBuilder.<String>newSetBuilder(6).add(AddViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(DetailViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(EditAccountViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(MainViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(SettingsViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(UpdateViewModel_HiltModules_KeyModule_ProvideFactory.provide()).build();
     }
 
     @Override
@@ -428,6 +431,8 @@ public final class DaggerAuthVaultApp_HiltComponents_SingletonC {
     private Provider<MainViewModel> mainViewModelProvider;
 
     private Provider<SettingsViewModel> settingsViewModelProvider;
+
+    private Provider<UpdateViewModel> updateViewModelProvider;
 
     private ViewModelCImpl(SingletonCImpl singletonCImpl,
         ActivityRetainedCImpl activityRetainedCImpl, SavedStateHandle savedStateHandleParam,
@@ -467,11 +472,12 @@ public final class DaggerAuthVaultApp_HiltComponents_SingletonC {
       this.editAccountViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 2);
       this.mainViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 3);
       this.settingsViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 4);
+      this.updateViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 5);
     }
 
     @Override
     public Map<String, javax.inject.Provider<ViewModel>> getHiltViewModelMap() {
-      return MapBuilder.<String, javax.inject.Provider<ViewModel>>newMapBuilder(5).put("com.authvault.presentation.ui.add.AddViewModel", ((Provider) addViewModelProvider)).put("com.authvault.presentation.ui.detail.DetailViewModel", ((Provider) detailViewModelProvider)).put("com.authvault.presentation.ui.edit.EditAccountViewModel", ((Provider) editAccountViewModelProvider)).put("com.authvault.presentation.ui.main.MainViewModel", ((Provider) mainViewModelProvider)).put("com.authvault.presentation.ui.settings.SettingsViewModel", ((Provider) settingsViewModelProvider)).build();
+      return MapBuilder.<String, javax.inject.Provider<ViewModel>>newMapBuilder(6).put("com.authvault.presentation.ui.add.AddViewModel", ((Provider) addViewModelProvider)).put("com.authvault.presentation.ui.detail.DetailViewModel", ((Provider) detailViewModelProvider)).put("com.authvault.presentation.ui.edit.EditAccountViewModel", ((Provider) editAccountViewModelProvider)).put("com.authvault.presentation.ui.main.MainViewModel", ((Provider) mainViewModelProvider)).put("com.authvault.presentation.ui.settings.SettingsViewModel", ((Provider) settingsViewModelProvider)).put("com.authvault.presentation.ui.update.UpdateViewModel", ((Provider) updateViewModelProvider)).build();
     }
 
     @Override
@@ -514,6 +520,9 @@ public final class DaggerAuthVaultApp_HiltComponents_SingletonC {
 
           case 4: // com.authvault.presentation.ui.settings.SettingsViewModel 
           return (T) new SettingsViewModel(singletonCImpl.provideSettingsRepositoryProvider.get(), viewModelCImpl.exportBackupUseCase(), viewModelCImpl.importBackupUseCase(), singletonCImpl.provideBackupRepositoryProvider.get());
+
+          case 5: // com.authvault.presentation.ui.update.UpdateViewModel 
+          return (T) new UpdateViewModel(new UpdateChecker(), singletonCImpl.provideSettingsRepositoryProvider.get());
 
           default: throw new AssertionError(id);
         }

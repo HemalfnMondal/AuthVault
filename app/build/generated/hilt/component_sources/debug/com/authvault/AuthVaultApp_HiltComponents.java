@@ -7,6 +7,7 @@ import com.authvault.presentation.ui.detail.DetailViewModel_HiltModules;
 import com.authvault.presentation.ui.edit.EditAccountViewModel_HiltModules;
 import com.authvault.presentation.ui.main.MainViewModel_HiltModules;
 import com.authvault.presentation.ui.settings.SettingsViewModel_HiltModules;
+import com.authvault.presentation.ui.update.UpdateViewModel_HiltModules;
 import dagger.Binds;
 import dagger.Component;
 import dagger.Module;
@@ -159,7 +160,8 @@ public final class AuthVaultApp_HiltComponents {
           HiltWrapper_ActivityRetainedComponentManager_LifecycleModule.class,
           HiltWrapper_SavedStateHandleModule.class,
           MainViewModel_HiltModules.KeyModule.class,
-          SettingsViewModel_HiltModules.KeyModule.class
+          SettingsViewModel_HiltModules.KeyModule.class,
+          UpdateViewModel_HiltModules.KeyModule.class
       }
   )
   @ActivityRetainedScoped
@@ -200,7 +202,8 @@ public final class AuthVaultApp_HiltComponents {
           EditAccountViewModel_HiltModules.BindsModule.class,
           HiltWrapper_HiltViewModelFactory_ViewModelModule.class,
           MainViewModel_HiltModules.BindsModule.class,
-          SettingsViewModel_HiltModules.BindsModule.class
+          SettingsViewModel_HiltModules.BindsModule.class,
+          UpdateViewModel_HiltModules.BindsModule.class
       }
   )
   @ViewModelScoped

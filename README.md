@@ -16,6 +16,8 @@ It is built with Kotlin, Jetpack Compose, Room, Hilt, CameraX, ML Kit, ZXing, Co
 - Reorder and delete accounts
 - Optional biometric app lock
 - Security settings for app lock and screenshot control
+- In-app update notifications powered by a GitHub-hosted JSON file
+- Manual update checks from Settings with automatic once-per-day checks
 - Encrypted local database with SQLCipher
 - Backup and restore support
 - Custom launcher icon and polished UI
@@ -46,6 +48,7 @@ Add screenshots here if you want to show the UI on GitHub.
 - Screenshot and screen recording behavior can be controlled from Security settings
 - Sensitive secret values are protected in the edit and detail flows
 - Account data is stored locally on the device
+- Update checks only read public release metadata and open the release page in your browser when a newer version is available
 
 ## Requirements
 
@@ -82,6 +85,7 @@ adb shell am start -n com.authvault/.MainActivity
 - `app/src/main/java/com/authvault/presentation` - Compose UI, navigation, and view models
 - `app/src/main/java/com/authvault/data` - Room database, repository, and crypto/data storage
 - `app/src/main/java/com/authvault/domain` - domain models and use cases
+- `version.json` - GitHub-hosted update metadata consumed by the in-app update checker
 
 ## Permissions
 
@@ -97,6 +101,7 @@ AuthVault uses these Android permissions:
 
 - Account data is stored locally on the device.
 - QR icons are loaded from Simple Icons with SVG support enabled in Coil.
+- The app checks `version.json` for newer releases and opens the release page when an update is available.
 - If you plan to publish this publicly on GitHub, consider adding a license file such as MIT, Apache 2.0, or GPL depending on your intent.
 - The app includes a custom launcher icon and adaptive icon assets.
 - Build output is generated with the local Gradle installation in this workspace.

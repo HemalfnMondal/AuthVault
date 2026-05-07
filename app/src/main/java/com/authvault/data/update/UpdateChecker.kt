@@ -8,6 +8,7 @@ import kotlinx.coroutines.withContext
 import java.net.HttpURLConnection
 import java.net.URL
 import java.util.concurrent.TimeUnit
+import javax.inject.Inject
 
 data class UpdateInfo(
     val versionCode: Int,
@@ -31,7 +32,7 @@ sealed interface UpdateCheckOutcome {
     data object Error : UpdateCheckOutcome
 }
 
-class UpdateChecker {
+class UpdateChecker @Inject constructor() {
     private val gson = Gson()
 
     suspend fun checkForUpdate(): UpdateInfo? = withContext(Dispatchers.IO) {
