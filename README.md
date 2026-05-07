@@ -24,7 +24,10 @@ It is built with Kotlin, Jetpack Compose, Room, Hilt, CameraX, ML Kit, ZXing, Co
 
 ## Screenshots
 
-Add screenshots here if you want to show the UI on GitHub.
+<img width="1280" height="2772" alt="Screenshot_2026-05-07-07-35-38-044_com authvault" src="https://github.com/user-attachments/assets/767ff1ce-d06d-4923-9db3-ba9d60d1f56b" />
+<img width="1280" height="2772" alt="Screenshot_2026-05-07-07-35-42-179_com authvault" src="https://github.com/user-attachments/assets/c414b1c8-e7ae-4ea1-a9a5-e6772b9bbd84" />
+<img width="1280" height="2772" alt="Screenshot_2026-05-07-07-35-48-505_com authvault" src="https://github.com/user-attachments/assets/0146c698-0f5a-4037-8f68-88ffc4f1d344" />
+
 
 ## Tech Stack
 
