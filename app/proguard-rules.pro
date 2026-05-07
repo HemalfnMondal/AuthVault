@@ -1,0 +1,6 @@
+-keep class com.authvault.data.crypto.** { *; }
+-keep class com.authvault.data.db.** { *; }
+-keep class com.authvault.domain.model.** { *; }
+-keep class com.authvault.data.repository.** { *; }
+-keep class com.authvault.presentation.navigation.** { *; }
+-keep class com.authvault.AuthVaultApp { *; }
