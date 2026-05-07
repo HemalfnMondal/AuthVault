@@ -20,7 +20,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.DeleteOutline
 import androidx.compose.material.icons.filled.DragHandle
-import androidx.compose.material.icons.outlined.Info
+import androidx.compose.material.icons.outlined.Edit
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Icon
@@ -77,63 +77,68 @@ fun AccountCard(
                 onLongClick = onLongPress
             )
             .padding(horizontal = 0.dp),
-        shape = RoundedCornerShape(12.dp),
+        shape = RoundedCornerShape(10.dp),
         colors = CardDefaults.cardColors(containerColor = cardBackground),
-        border = BorderStroke(1.5.dp, cardBorder),
+        border = BorderStroke(1.dp, cardBorder),
         elevation = CardDefaults.cardElevation(defaultElevation = if (isDarkMode) 0.dp else 2.dp)
     ) {
         Row(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(horizontal = 16.dp, vertical = 12.dp),
+                .padding(horizontal = 12.dp, vertical = 8.dp),
             verticalAlignment = Alignment.CenterVertically
         ) {
-            Box(modifier = Modifier.size(40.dp), contentAlignment = Alignment.Center) {
-                ServiceIconView(issuer = account.issuer, iconSlug = account.iconSlug, modifier = Modifier.size(40.dp))
+            Box(modifier = Modifier.size(36.dp), contentAlignment = Alignment.Center) {
+                ServiceIconView(issuer = account.issuer, iconSlug = account.iconSlug, modifier = Modifier.size(36.dp))
             }
-            Spacer(modifier = Modifier.width(12.dp))
+            Spacer(modifier = Modifier.width(8.dp))
             Column(modifier = Modifier.weight(1f)) {
-                Text(
-                    text = account.issuer,
-                    fontSize = 15.sp,
-                    fontWeight = FontWeight.SemiBold,
-                    color = issuerTextColor,
-                    maxLines = 1
-                )
-                Spacer(modifier = Modifier.height(2.dp))
+                Row(verticalAlignment = Alignment.CenterVertically) {
+                    Text(
+                        text = account.issuer,
+                        fontSize = 14.sp,
+                        fontWeight = FontWeight.SemiBold,
+                        color = issuerTextColor,
+                        maxLines = 1,
+                        modifier = Modifier.weight(1f)
+                    )
+                    IconButton(onClick = onDetails, modifier = Modifier.size(20.dp)) {
+                        Icon(
+                            imageVector = Icons.Outlined.Edit,
+                            contentDescription = "Edit account",
+                            tint = accountTextColor,
+                            modifier = Modifier.size(16.dp)
+                        )
+                    }
+                }
+                Spacer(modifier = Modifier.height(1.dp))
                 Text(
                     text = account.accountName,
-                    fontSize = 12.sp,
+                    fontSize = 11.sp,
                     color = accountTextColor,
                     maxLines = 1
                 )
-                Spacer(modifier = Modifier.height(8.dp))
+                Spacer(modifier = Modifier.height(6.dp))
                 Text(
                     text = formatCode(account.code),
-                    fontSize = 26.sp,
+                    fontSize = 22.sp,
                     fontWeight = FontWeight.Bold,
                     fontFamily = FontFamily.Monospace,
                     color = codeTextColor,
-                    letterSpacing = 4.sp,
+                    letterSpacing = 2.sp,
                     modifier = Modifier.clickable(onClick = onCopyCode)
                 )
             }
-            Spacer(modifier = Modifier.width(12.dp))
+            Spacer(modifier = Modifier.width(8.dp))
             Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                CountdownRing(countdown = account.countdown, period = account.period, size = 48.dp)
-                Spacer(modifier = Modifier.height(6.dp))
-                IconButton(onClick = onDelete) {
+                CountdownRing(countdown = account.countdown, period = account.period, size = 40.dp)
+                Spacer(modifier = Modifier.height(2.dp))
+                IconButton(onClick = onDelete, modifier = Modifier.size(24.dp)) {
                     Icon(
                         imageVector = Icons.Default.DeleteOutline,
                         contentDescription = "Delete account",
-                        tint = deleteIconColor
-                    )
-                }
-                IconButton(onClick = onDetails) {
-                    Icon(
-                        imageVector = Icons.Outlined.Info,
-                        contentDescription = "Account details",
-                        tint = DeepBlue
+                        tint = deleteIconColor,
+                        modifier = Modifier.size(18.dp)
                     )
                 }
                 if (isReorderMode) {

@@ -4,6 +4,7 @@ import com.authvault.di.AppModule;
 import com.authvault.di.DatabaseModule;
 import com.authvault.presentation.ui.add.AddViewModel_HiltModules;
 import com.authvault.presentation.ui.detail.DetailViewModel_HiltModules;
+import com.authvault.presentation.ui.edit.EditAccountViewModel_HiltModules;
 import com.authvault.presentation.ui.main.MainViewModel_HiltModules;
 import com.authvault.presentation.ui.settings.SettingsViewModel_HiltModules;
 import dagger.Binds;
@@ -153,6 +154,7 @@ public final class AuthVaultApp_HiltComponents {
           ActivityCBuilderModule.class,
           ViewModelCBuilderModule.class,
           DetailViewModel_HiltModules.KeyModule.class,
+          EditAccountViewModel_HiltModules.KeyModule.class,
           HiltWrapper_ActivityRetainedComponentManager_LifecycleModule.class,
           HiltWrapper_SavedStateHandleModule.class,
           MainViewModel_HiltModules.KeyModule.class,
@@ -194,6 +196,7 @@ public final class AuthVaultApp_HiltComponents {
       modules = {
           AddViewModel_HiltModules.BindsModule.class,
           DetailViewModel_HiltModules.BindsModule.class,
+          EditAccountViewModel_HiltModules.BindsModule.class,
           HiltWrapper_HiltViewModelFactory_ViewModelModule.class,
           MainViewModel_HiltModules.BindsModule.class,
           SettingsViewModel_HiltModules.BindsModule.class
