@@ -15,6 +15,8 @@ import com.authvault.presentation.ui.add.ScanQrScreen
 // Upload flow converted to direct image picker; UploadQrScreen removed
 import com.authvault.presentation.ui.detail.AccountDetailScreen
 import com.authvault.presentation.ui.detail.DetailViewModel
+import com.authvault.presentation.ui.edit.EditAccountScreen
+import com.authvault.presentation.ui.edit.EditAccountViewModel
 import com.authvault.presentation.ui.main.MainScreen
 import com.authvault.presentation.ui.main.MainViewModel
 import com.authvault.presentation.ui.settings.Mode
@@ -32,7 +34,7 @@ fun AppNavGraph() {
                 viewModel = viewModel,
                 onOpenSettings = { navController.navigate(Screen.Settings.route) },
                 onAddAccount = { navController.navigate(Screen.AddMethod.route) },
-                onOpenDetail = { accountId -> navController.navigate(Screen.Detail.createRoute(accountId)) },
+                onOpenDetail = { accountId -> navController.navigate(Screen.EditAccount.createRoute(accountId)) },
                 onNavigateToScan = { navController.navigate(Screen.ScanQr.route) }
             )
         }
@@ -109,6 +111,19 @@ fun AppNavGraph() {
                 viewModel = viewModel,
                 onCancel = { navController.popBackStack() },
                 onAdded = { navController.popBackStack(Screen.Main.route, false) }
+            )
+        }
+        composable(
+            route = Screen.EditAccount.route,
+            arguments = listOf(navArgument("accountId") { type = NavType.IntType })
+        ) {
+            val viewModel = hiltViewModel<EditAccountViewModel>()
+            EditAccountScreen(
+                viewModel = viewModel,
+                onNavigateBack = { navController.popBackStack() },
+                onSaved = {
+                    navController.popBackStack(Screen.Main.route, false)
+                }
             )
         }
         composable(
