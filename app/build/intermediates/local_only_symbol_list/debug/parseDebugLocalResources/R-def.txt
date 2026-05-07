@@ -1,0 +1,8 @@
+R_DEF: Internal format may change without notice
+local
+color authvault_cyan
+color authvault_dark_navy
+color authvault_deep_blue
+color authvault_light_gray
+color authvault_white
+style Theme.AuthVault

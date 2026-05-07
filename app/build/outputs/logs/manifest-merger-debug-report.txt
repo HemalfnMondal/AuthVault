@@ -1,0 +1,697 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:2:1-30:12
+MERGED from [io.coil-kt:coil-svg:2.5.0] /home/rupa/.gradle/caches/transforms-4/12a28ec38fbf7b22104564ed0ababcb9/transformed/coil-svg-2.5.0/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.material:material:1.12.0] /home/rupa/.gradle/caches/transforms-4/02de1a5f5518a9d6f7ac003e4efac66f/transformed/material-1.12.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.camera:camera-video:1.3.1] /home/rupa/.gradle/caches/transforms-4/6a83646083af891fa5fbd402f68fbfbb/transformed/camera-video-1.3.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.camera:camera-core:1.3.1] /home/rupa/.gradle/caches/transforms-4/ec77a5864cbbb1502cbfaf419123e348/transformed/camera-core-1.3.1/AndroidManifest.xml:17:1-36:12
+MERGED from [androidx.camera:camera-lifecycle:1.3.1] /home/rupa/.gradle/caches/transforms-4/609495e4a9730f373825c99055cdb36f/transformed/camera-lifecycle-1.3.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.camera:camera-camera2:1.3.1] /home/rupa/.gradle/caches/transforms-4/9f14b0c3f86b1f55f0fde8adac1beb03/transformed/camera-camera2-1.3.1/AndroidManifest.xml:17:1-36:12
+MERGED from [androidx.camera:camera-view:1.3.1] /home/rupa/.gradle/caches/transforms-4/5d28b2258cbc8ea0e476e431909705bf/transformed/camera-view-1.3.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.biometric:biometric:1.1.0] /home/rupa/.gradle/caches/transforms-4/306c72e2c207eff4ae6124a168d550e2/transformed/biometric-1.1.0/AndroidManifest.xml:17:1-29:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /home/rupa/.gradle/caches/transforms-4/844deb363bb19bef2ad2c30322aeba1a/transformed/constraintlayout-2.0.1/AndroidManifest.xml:2:1-11:12
+MERGED from [io.coil-kt:coil-compose:2.5.0] /home/rupa/.gradle/caches/transforms-4/dbd1714a4462df4611a99ca96d69c1c0/transformed/coil-compose-2.5.0/AndroidManifest.xml:2:1-7:12
+MERGED from [io.coil-kt:coil-compose-base:2.5.0] /home/rupa/.gradle/caches/transforms-4/c8c27739008bd2fa89cb31d1bd3caffe/transformed/coil-compose-base-2.5.0/AndroidManifest.xml:2:1-7:12
+MERGED from [io.coil-kt:coil:2.5.0] /home/rupa/.gradle/caches/transforms-4/2834f5a229746d890ba6f08d2bff3a49/transformed/coil-2.5.0/AndroidManifest.xml:2:1-7:12
+MERGED from [io.coil-kt:coil-base:2.5.0] /home/rupa/.gradle/caches/transforms-4/fc3def87a049c1e43c21f7c3ed6b41d8/transformed/coil-base-2.5.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.appcompat:appcompat-resources:1.7.0] /home/rupa/.gradle/caches/transforms-4/d6e78babc3cc4697c0e050de65ed58ac/transformed/appcompat-resources-1.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.appcompat:appcompat:1.7.0] /home/rupa/.gradle/caches/transforms-4/6d72fba9324ecc20f4f548208a1fa349/transformed/appcompat-1.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/rupa/.gradle/caches/transforms-4/0d0dfeee0b6ba5796a879ad0c9ce497b/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /home/rupa/.gradle/caches/transforms-4/2a94446a001fd682d2e9295856d63c6c/transformed/drawerlayout-1.1.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.5.0] /home/rupa/.gradle/caches/transforms-4/72db968e53bd16f60005c127fbb019ea/transformed/transition-1.5.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /home/rupa/.gradle/caches/transforms-4/18449f79013d407249b69572432ea1de/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/rupa/.gradle/caches/transforms-4/2edd450d1ffb72c8fa8135024073c428/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/rupa/.gradle/caches/transforms-4/7682be25df243c3a8bfd61d7f784a367/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/rupa/.gradle/caches/transforms-4/762ff0a9e8dd026702b6e26120b54533/transformed/viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.mlkit:barcode-scanning:17.2.0] /home/rupa/.gradle/caches/transforms-4/f4403d3306a4973feaa1ff7062e9806e/transformed/barcode-scanning-17.2.0/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] /home/rupa/.gradle/caches/transforms-4/fd516a53b05184b5fb8aba086666b2ab/transformed/play-services-mlkit-barcode-scanning-18.3.0/AndroidManifest.xml:2:1-18:12
+MERGED from [com.google.mlkit:barcode-scanning-common:17.0.0] /home/rupa/.gradle/caches/transforms-4/ab4bb09138a4a36375d9d8add52e886b/transformed/barcode-scanning-common-17.0.0/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.mlkit:vision-common:17.3.0] /home/rupa/.gradle/caches/transforms-4/4833e95feb7052a8bb2ca203e2b9a757/transformed/vision-common-17.3.0/AndroidManifest.xml:2:1-18:12
+MERGED from [com.google.mlkit:common:18.9.0] /home/rupa/.gradle/caches/transforms-4/b788d9f7a03bb8f5e81d6d0101e9b41b/transformed/common-18.9.0/AndroidManifest.xml:2:1-26:12
+MERGED from [com.google.android.gms:play-services-base:18.1.0] /home/rupa/.gradle/caches/transforms-4/f97016e3ade3b276751c0d2c4003556f/transformed/play-services-base-18.1.0/AndroidManifest.xml:16:1-24:12
+MERGED from [com.google.mlkit:vision-interfaces:16.2.0] /home/rupa/.gradle/caches/transforms-4/f2f2758394826e80e8e0f8c0ad510c07/transformed/vision-interfaces-16.2.0/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-tasks:18.0.2] /home/rupa/.gradle/caches/transforms-4/b136aeee43690d7f2777e5bd3774404a/transformed/play-services-tasks-18.0.2/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] /home/rupa/.gradle/caches/transforms-4/c2f10fbae33ec6d67c54258b866f586e/transformed/play-services-basement-18.1.0/AndroidManifest.xml:16:1-26:12
+MERGED from [androidx.hilt:hilt-navigation-compose:1.2.0] /home/rupa/.gradle/caches/transforms-4/cd89aa17e0372a7dd9cb947c036aabf7/transformed/hilt-navigation-compose-1.2.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.hilt:hilt-navigation:1.2.0] /home/rupa/.gradle/caches/transforms-4/4585a910bf2230bf5f2fbc26670e3260/transformed/hilt-navigation-1.2.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-common:2.7.7] /home/rupa/.gradle/caches/transforms-4/acc5785c5781ed3b80c7eff4f3b37347/transformed/navigation-common-2.7.7/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-runtime:2.7.7] /home/rupa/.gradle/caches/transforms-4/bd1311935f519d435f49ec52ed8853c8/transformed/navigation-runtime-2.7.7/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-common-ktx:2.7.7] /home/rupa/.gradle/caches/transforms-4/a4adec1cbb784fbf62a18f003e44fe52/transformed/navigation-common-ktx-2.7.7/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.7] /home/rupa/.gradle/caches/transforms-4/cef9ed321b91439d7f6ba3c02c7930b9/transformed/navigation-runtime-ktx-2.7.7/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-compose:2.7.7] /home/rupa/.gradle/caches/transforms-4/2f906307b05221c89c64d992be6b7a91/transformed/navigation-compose-2.7.7/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.dagger:hilt-android:2.50] /home/rupa/.gradle/caches/transforms-4/13a3cff22d5bbdbe172102486e695ca7/transformed/hilt-android-2.50/AndroidManifest.xml:16:1-19:12
+MERGED from [androidx.fragment:fragment:1.5.4] /home/rupa/.gradle/caches/transforms-4/2eeac2bba0175b7a0063274ec6e31202/transformed/fragment-1.5.4/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.8.2] /home/rupa/.gradle/caches/transforms-4/19ce505037bc1caaff02ef104dde6d70/transformed/activity-1.8.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity-ktx:1.8.2] /home/rupa/.gradle/caches/transforms-4/d4c220b48c92c1f2e455fd6ab3b8ce76/transformed/activity-ktx-1.8.2/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material3:material3-android:1.2.0] /home/rupa/.gradle/caches/transforms-4/463af9175f55064a9de511202f6dc994/transformed/material3-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.material:material-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/dd23e6dded7fd4e9403f2017bc577d96/transformed/material-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-icons-core-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/7411b19e6eff97864cf1252a32037441/transformed/material-icons-core-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-icons-extended-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/6f1209f8242aa9dfbac8ff356cd86691/transformed/material-icons-extended-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-ripple-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/54b79e19973ab18bac2f70cc87ed376f/transformed/material-ripple-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.animation:animation-core-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/e90206b897e376724e90886a75b14ad9/transformed/animation-core-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.animation:animation-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/809ca1b9aa78ffd1f0386d0748d692ed/transformed/animation-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/1c0b84c5af89bb1c46547c7b4ee64590/transformed/foundation-layout-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.foundation:foundation-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/052910668df1e086481ebd511ac7da63/transformed/foundation-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-tooling-data-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/c25ddb74d9b9daa164c7b6792d261be5/transformed/ui-tooling-data-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-unit-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/4a2766daef29fc24ac300c907881d5db/transformed/ui-unit-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-geometry-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/722360ec67cca2e072301f427cc2620a/transformed/ui-geometry-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-util-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/4f86a41f6f34a2cbb625c5193e635380/transformed/ui-util-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-text-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/36315a27769743745e2ece0c187c776d/transformed/ui-text-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-graphics-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/c1059c641c9a641dad6d83b42b9e7b24/transformed/ui-graphics-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/9956ceefcfc3de51039a5369bc061c62/transformed/ui-tooling-preview-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.ui:ui-tooling-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/12af4d062272f00af29657348eb9a7b6/transformed/ui-tooling-release/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.activity:activity-compose:1.8.2] /home/rupa/.gradle/caches/transforms-4/1465582dfddcd1c620c2be34bb0f46bc/transformed/activity-compose-1.8.2/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/rupa/.gradle/caches/transforms-4/d849d560ccca28ef332d4f06a758ff6c/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /home/rupa/.gradle/caches/transforms-4/a53a82b45d096f6415a19ac712271adb/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0] /home/rupa/.gradle/caches/transforms-4/96f76f9c85f528c2deaad573886c9955/transformed/lifecycle-livedata-core-ktx-2.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.7.0] /home/rupa/.gradle/caches/transforms-4/2541996d7c35559a7cf9c5d246dd4038/transformed/lifecycle-livedata-2.7.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] /home/rupa/.gradle/caches/transforms-4/a232aaa062bb63fdfba968415c107149/transformed/lifecycle-livedata-core-2.7.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /home/rupa/.gradle/caches/transforms-4/c308220584390e936f0ca84e54f76411/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.2.1] /home/rupa/.gradle/caches/transforms-4/cc118e6383ddca6bbfe326d8ae6f1af0/transformed/savedstate-1.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] /home/rupa/.gradle/caches/transforms-4/1667aea74ddc7df6f59eb570c671bb91/transformed/lifecycle-viewmodel-savedstate-2.7.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0] /home/rupa/.gradle/caches/transforms-4/bd0ae15e8c10880c45ed956c2ebec911/transformed/lifecycle-viewmodel-ktx-2.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.7.0] /home/rupa/.gradle/caches/transforms-4/6746ab977ddb29f421c1a206be435ab0/transformed/lifecycle-runtime-2.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.7.0] /home/rupa/.gradle/caches/transforms-4/0029566b2226e56843fe85185762d005/transformed/lifecycle-viewmodel-2.7.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /home/rupa/.gradle/caches/transforms-4/7a683566944ff58760cee52d359412ee/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.7.0] /home/rupa/.gradle/caches/transforms-4/a545e184c17942c8bb111a0cca313aab/transformed/lifecycle-runtime-ktx-2.7.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0] /home/rupa/.gradle/caches/transforms-4/2ee25fe9a4734a7e6d5ed478b425f52a/transformed/lifecycle-viewmodel-compose-2.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.accompanist:accompanist-drawablepainter:0.32.0] /home/rupa/.gradle/caches/transforms-4/c758752830a0f5638862249440b7ef1d/transformed/accompanist-drawablepainter-0.32.0/AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.compose.ui:ui-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/3759a36f0f11e84e8efc908380ff2d80/transformed/ui-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] /home/rupa/.gradle/caches/transforms-4/5b5d8f4aee01f72f24f4d82d87ffaec1/transformed/emoji2-views-helper-1.3.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.3.0] /home/rupa/.gradle/caches/transforms-4/ad9c1ce0932180eaa17e9fe798af9148/transformed/emoji2-1.3.0/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/rupa/.gradle/caches/transforms-4/4e41cac64e358918b26d6105d731a98f/transformed/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/rupa/.gradle/caches/transforms-4/0cf8c34826c586c47285cec35291ea04/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.1.0] /home/rupa/.gradle/caches/transforms-4/a7814bde46007f8867f09074cb49ebb9/transformed/customview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.autofill:autofill:1.0.0] /home/rupa/.gradle/caches/transforms-4/a3758daede7cd2a10ae3bc9346979d2f/transformed/autofill-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.13.1] /home/rupa/.gradle/caches/transforms-4/bd52f1e24a1f383a57012d0ceaa67877/transformed/core-1.13.1/AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /home/rupa/.gradle/caches/transforms-4/044b5021f4c6bf41c8bd3630a6798261/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.core:core-ktx:1.13.1] /home/rupa/.gradle/caches/transforms-4/baab8d2a02531708bb25e3056274182b/transformed/core-ktx-1.13.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.room:room-runtime:2.6.1] /home/rupa/.gradle/caches/transforms-4/7df126978c2e982a4c9efbc0d5b56228/transformed/room-runtime-2.6.1/AndroidManifest.xml:17:1-31:12
+MERGED from [androidx.room:room-ktx:2.6.1] /home/rupa/.gradle/caches/transforms-4/349f982ec8fc3d320802221c2dcc72f8/transformed/room-ktx-2.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [net.zetetic:android-database-sqlcipher:4.5.4] /home/rupa/.gradle/caches/transforms-4/7c88dc2badb46331bf54373b9abb1409/transformed/android-database-sqlcipher-4.5.4/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.sqlite:sqlite-framework:2.4.0] /home/rupa/.gradle/caches/transforms-4/f2d024d53efd6b0504e66ff6254eb195/transformed/sqlite-framework-2.4.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite:2.4.0] /home/rupa/.gradle/caches/transforms-4/71472f75d6d6cef3658d7eb008862aa4/transformed/sqlite-2.4.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite-ktx:2.4.0] /home/rupa/.gradle/caches/transforms-4/1477774cf60e4f1128b995728d7f97ed/transformed/sqlite-ktx-2.4.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.datastore:datastore-core-android:1.1.1] /home/rupa/.gradle/caches/transforms-4/1f93dc007753e19cdbb0573b69077996/transformed/datastore-core-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.datastore:datastore-android:1.1.1] /home/rupa/.gradle/caches/transforms-4/f241e0bbdd7dac3d2ad83984bee632fe/transformed/datastore-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.datastore:datastore-preferences-android:1.1.1] /home/rupa/.gradle/caches/transforms-4/b485f00ac033886a3225bedb86a8d5fd/transformed/datastore-preferences-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/a2710c6f9744a38ce44f2f3eb742e907/transformed/runtime-saveable-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.runtime:runtime-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/c6ea216ec74803c7b611996fcfeba5ff/transformed/runtime-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.annotation:annotation-experimental:1.4.0] /home/rupa/.gradle/caches/transforms-4/ba17b1497d7fe7e689a11178e0fc27fe/transformed/annotation-experimental-1.4.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.security:security-crypto:1.1.0-alpha06] /home/rupa/.gradle/caches/transforms-4/3fd35d1c7a34654cf816a105cb9da1ef/transformed/security-crypto-1.1.0-alpha06/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] /home/rupa/.gradle/caches/transforms-4/7eeef038130400e7e35b94c0781f497f/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/rupa/.gradle/caches/transforms-4/bcc5f239610b1bb9bf4196407a3dbf16/transformed/core-runtime-2.2.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/rupa/.gradle/caches/transforms-4/4ca98143fcf0d80b55530509d6ca754a/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:17:1-55:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/rupa/.gradle/caches/transforms-4/919d49a05a0fe3bbb134d4057b7d24c8/transformed/startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/rupa/.gradle/caches/transforms-4/90e0706bd90c469aaf0b79d7fe266d68/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/rupa/.gradle/caches/transforms-4/ebf16b46643aad67c0613180b6cfab30/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/rupa/.gradle/caches/transforms-4/51ceef0fd492441d3c63b732a12982fa/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:15:1-38:12
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /home/rupa/.gradle/caches/transforms-4/76b48fe2b95b4e0e83785f9e713b6fd3/transformed/transport-runtime-2.2.6/AndroidManifest.xml:15:1-41:12
+MERGED from [com.google.android.datatransport:transport-api:2.2.1] /home/rupa/.gradle/caches/transforms-4/9543fe2a60fa47734cee37875cd7b97e/transformed/transport-api-2.2.1/AndroidManifest.xml:15:1-22:12
+MERGED from [com.google.firebase:firebase-components:16.1.0] /home/rupa/.gradle/caches/transforms-4/6ef4a85115dc07accc18853cf1ebb367/transformed/firebase-components-16.1.0/AndroidManifest.xml:15:1-23:12
+MERGED from [com.google.firebase:firebase-encoders-json:17.1.0] /home/rupa/.gradle/caches/transforms-4/98fa4d57fd138a51719a5cd4aca432a6/transformed/firebase-encoders-json-17.1.0/AndroidManifest.xml:15:1-23:12
+MERGED from [androidx.exifinterface:exifinterface:1.3.6] /home/rupa/.gradle/caches/transforms-4/f4429cd8b072e918b30b5f1d70b1df4d/transformed/exifinterface-1.3.6/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.tracing:tracing:1.0.0] /home/rupa/.gradle/caches/transforms-4/ce144985820cb6bc4336bf3b1db767b2/transformed/tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/rupa/.gradle/caches/transforms-4/3950fd3ef519dcc790724fed4e4caeb4/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/rupa/.gradle/caches/transforms-4/3b8336bc29bda4eeb51890a23f1aefbe/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /home/rupa/.gradle/caches/transforms-4/861e14edf220ff0376ae6c26205635fb/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.dagger:dagger-lint-aar:2.50] /home/rupa/.gradle/caches/transforms-4/032f075bdda5bcd51cb163a0b44cb32a/transformed/dagger-lint-aar-2.50/AndroidManifest.xml:16:1-19:12
+MERGED from [com.caverock:androidsvg-aar:1.4] /home/rupa/.gradle/caches/transforms-4/d3682c265c9190b24bb5de06be28f0db/transformed/androidsvg-aar-1.4/AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.android.odml:image:1.0.0-beta1] /home/rupa/.gradle/caches/transforms-4/887b7231e2ce3a436046fad1eaa26fb5/transformed/image-1.0.0-beta1/AndroidManifest.xml:2:1-9:12
+	package
+		INJECTED from /home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:4:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/rupa/.gradle/caches/transforms-4/51ceef0fd492441d3c63b732a12982fa/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:26:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/rupa/.gradle/caches/transforms-4/51ceef0fd492441d3c63b732a12982fa/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:26:5-67
+	android:name
+		ADDED from /home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:4:22-64
+uses-permission#android.permission.CAMERA
+ADDED from /home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:5:5-65
+	android:name
+		ADDED from /home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:5:22-62
+uses-permission#android.permission.USE_BIOMETRIC
+ADDED from /home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:6:5-72
+MERGED from [androidx.biometric:biometric:1.1.0] /home/rupa/.gradle/caches/transforms-4/306c72e2c207eff4ae6124a168d550e2/transformed/biometric-1.1.0/AndroidManifest.xml:24:5-72
+MERGED from [androidx.biometric:biometric:1.1.0] /home/rupa/.gradle/caches/transforms-4/306c72e2c207eff4ae6124a168d550e2/transformed/biometric-1.1.0/AndroidManifest.xml:24:5-72
+	android:name
+		ADDED from /home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:6:22-69
+uses-permission#android.permission.USE_FINGERPRINT
+ADDED from /home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:7:5-74
+MERGED from [androidx.biometric:biometric:1.1.0] /home/rupa/.gradle/caches/transforms-4/306c72e2c207eff4ae6124a168d550e2/transformed/biometric-1.1.0/AndroidManifest.xml:27:5-74
+MERGED from [androidx.biometric:biometric:1.1.0] /home/rupa/.gradle/caches/transforms-4/306c72e2c207eff4ae6124a168d550e2/transformed/biometric-1.1.0/AndroidManifest.xml:27:5-74
+	android:name
+		ADDED from /home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:7:22-71
+uses-permission#android.permission.VIBRATE
+ADDED from /home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:8:5-66
+	android:name
+		ADDED from /home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:8:22-63
+application
+ADDED from /home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:10:5-28:19
+INJECTED from /home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:10:5-28:19
+MERGED from [com.google.android.material:material:1.12.0] /home/rupa/.gradle/caches/transforms-4/02de1a5f5518a9d6f7ac003e4efac66f/transformed/material-1.12.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.12.0] /home/rupa/.gradle/caches/transforms-4/02de1a5f5518a9d6f7ac003e4efac66f/transformed/material-1.12.0/AndroidManifest.xml:22:5-20
+MERGED from [androidx.camera:camera-core:1.3.1] /home/rupa/.gradle/caches/transforms-4/ec77a5864cbbb1502cbfaf419123e348/transformed/camera-core-1.3.1/AndroidManifest.xml:23:5-34:19
+MERGED from [androidx.camera:camera-core:1.3.1] /home/rupa/.gradle/caches/transforms-4/ec77a5864cbbb1502cbfaf419123e348/transformed/camera-core-1.3.1/AndroidManifest.xml:23:5-34:19
+MERGED from [androidx.camera:camera-camera2:1.3.1] /home/rupa/.gradle/caches/transforms-4/9f14b0c3f86b1f55f0fde8adac1beb03/transformed/camera-camera2-1.3.1/AndroidManifest.xml:23:5-34:19
+MERGED from [androidx.camera:camera-camera2:1.3.1] /home/rupa/.gradle/caches/transforms-4/9f14b0c3f86b1f55f0fde8adac1beb03/transformed/camera-camera2-1.3.1/AndroidManifest.xml:23:5-34:19
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /home/rupa/.gradle/caches/transforms-4/844deb363bb19bef2ad2c30322aeba1a/transformed/constraintlayout-2.0.1/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /home/rupa/.gradle/caches/transforms-4/844deb363bb19bef2ad2c30322aeba1a/transformed/constraintlayout-2.0.1/AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] /home/rupa/.gradle/caches/transforms-4/fd516a53b05184b5fb8aba086666b2ab/transformed/play-services-mlkit-barcode-scanning-18.3.0/AndroidManifest.xml:8:5-16:19
+MERGED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] /home/rupa/.gradle/caches/transforms-4/fd516a53b05184b5fb8aba086666b2ab/transformed/play-services-mlkit-barcode-scanning-18.3.0/AndroidManifest.xml:8:5-16:19
+MERGED from [com.google.mlkit:vision-common:17.3.0] /home/rupa/.gradle/caches/transforms-4/4833e95feb7052a8bb2ca203e2b9a757/transformed/vision-common-17.3.0/AndroidManifest.xml:8:5-16:19
+MERGED from [com.google.mlkit:vision-common:17.3.0] /home/rupa/.gradle/caches/transforms-4/4833e95feb7052a8bb2ca203e2b9a757/transformed/vision-common-17.3.0/AndroidManifest.xml:8:5-16:19
+MERGED from [com.google.mlkit:common:18.9.0] /home/rupa/.gradle/caches/transforms-4/b788d9f7a03bb8f5e81d6d0101e9b41b/transformed/common-18.9.0/AndroidManifest.xml:8:5-24:19
+MERGED from [com.google.mlkit:common:18.9.0] /home/rupa/.gradle/caches/transforms-4/b788d9f7a03bb8f5e81d6d0101e9b41b/transformed/common-18.9.0/AndroidManifest.xml:8:5-24:19
+MERGED from [com.google.android.gms:play-services-base:18.1.0] /home/rupa/.gradle/caches/transforms-4/f97016e3ade3b276751c0d2c4003556f/transformed/play-services-base-18.1.0/AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-base:18.1.0] /home/rupa/.gradle/caches/transforms-4/f97016e3ade3b276751c0d2c4003556f/transformed/play-services-base-18.1.0/AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-tasks:18.0.2] /home/rupa/.gradle/caches/transforms-4/b136aeee43690d7f2777e5bd3774404a/transformed/play-services-tasks-18.0.2/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks:18.0.2] /home/rupa/.gradle/caches/transforms-4/b136aeee43690d7f2777e5bd3774404a/transformed/play-services-tasks-18.0.2/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] /home/rupa/.gradle/caches/transforms-4/c2f10fbae33ec6d67c54258b866f586e/transformed/play-services-basement-18.1.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] /home/rupa/.gradle/caches/transforms-4/c2f10fbae33ec6d67c54258b866f586e/transformed/play-services-basement-18.1.0/AndroidManifest.xml:20:5-24:19
+MERGED from [androidx.compose.ui:ui-tooling-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/12af4d062272f00af29657348eb9a7b6/transformed/ui-tooling-release/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.compose.ui:ui-tooling-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/12af4d062272f00af29657348eb9a7b6/transformed/ui-tooling-release/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /home/rupa/.gradle/caches/transforms-4/7a683566944ff58760cee52d359412ee/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /home/rupa/.gradle/caches/transforms-4/7a683566944ff58760cee52d359412ee/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.3.0] /home/rupa/.gradle/caches/transforms-4/ad9c1ce0932180eaa17e9fe798af9148/transformed/emoji2-1.3.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.3.0] /home/rupa/.gradle/caches/transforms-4/ad9c1ce0932180eaa17e9fe798af9148/transformed/emoji2-1.3.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.core:core:1.13.1] /home/rupa/.gradle/caches/transforms-4/bd52f1e24a1f383a57012d0ceaa67877/transformed/core-1.13.1/AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.13.1] /home/rupa/.gradle/caches/transforms-4/bd52f1e24a1f383a57012d0ceaa67877/transformed/core-1.13.1/AndroidManifest.xml:28:5-89
+MERGED from [androidx.room:room-runtime:2.6.1] /home/rupa/.gradle/caches/transforms-4/7df126978c2e982a4c9efbc0d5b56228/transformed/room-runtime-2.6.1/AndroidManifest.xml:23:5-29:19
+MERGED from [androidx.room:room-runtime:2.6.1] /home/rupa/.gradle/caches/transforms-4/7df126978c2e982a4c9efbc0d5b56228/transformed/room-runtime-2.6.1/AndroidManifest.xml:23:5-29:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/rupa/.gradle/caches/transforms-4/919d49a05a0fe3bbb134d4057b7d24c8/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/rupa/.gradle/caches/transforms-4/919d49a05a0fe3bbb134d4057b7d24c8/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/rupa/.gradle/caches/transforms-4/ebf16b46643aad67c0613180b6cfab30/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/rupa/.gradle/caches/transforms-4/ebf16b46643aad67c0613180b6cfab30/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/rupa/.gradle/caches/transforms-4/51ceef0fd492441d3c63b732a12982fa/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/rupa/.gradle/caches/transforms-4/51ceef0fd492441d3c63b732a12982fa/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /home/rupa/.gradle/caches/transforms-4/76b48fe2b95b4e0e83785f9e713b6fd3/transformed/transport-runtime-2.2.6/AndroidManifest.xml:25:5-39:19
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /home/rupa/.gradle/caches/transforms-4/76b48fe2b95b4e0e83785f9e713b6fd3/transformed/transport-runtime-2.2.6/AndroidManifest.xml:25:5-39:19
+MERGED from [com.google.android.odml:image:1.0.0-beta1] /home/rupa/.gradle/caches/transforms-4/887b7231e2ce3a436046fad1eaa26fb5/transformed/image-1.0.0-beta1/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.odml:image:1.0.0-beta1] /home/rupa/.gradle/caches/transforms-4/887b7231e2ce3a436046fad1eaa26fb5/transformed/image-1.0.0-beta1/AndroidManifest.xml:7:5-20
+	android:extractNativeLibs
+		INJECTED from /home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.13.1] /home/rupa/.gradle/caches/transforms-4/bd52f1e24a1f383a57012d0ceaa67877/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
+	android:supportsRtl
+		ADDED from /home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:16:9-35
+	android:label
+		ADDED from /home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:15:9-34
+	android:fullBackupContent
+		ADDED from /home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:13:9-42
+	android:icon
+		ADDED from /home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:14:9-58
+	android:allowBackup
+		ADDED from /home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:12:9-36
+	android:theme
+		ADDED from /home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:17:9-47
+	android:name
+		ADDED from /home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:11:9-37
+activity#com.authvault.MainActivity
+ADDED from /home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:18:9-27:20
+	android:exported
+		ADDED from /home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:20:13-36
+	android:theme
+		ADDED from /home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:21:13-51
+	android:name
+		ADDED from /home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:19:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:22:13-26:29
+action#android.intent.action.MAIN
+ADDED from /home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:23:17-69
+	android:name
+		ADDED from /home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:23:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:25:17-77
+	android:name
+		ADDED from /home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml:25:27-74
+uses-sdk
+INJECTED from /home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml
+INJECTED from /home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml
+MERGED from [io.coil-kt:coil-svg:2.5.0] /home/rupa/.gradle/caches/transforms-4/12a28ec38fbf7b22104564ed0ababcb9/transformed/coil-svg-2.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt:coil-svg:2.5.0] /home/rupa/.gradle/caches/transforms-4/12a28ec38fbf7b22104564ed0ababcb9/transformed/coil-svg-2.5.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.material:material:1.12.0] /home/rupa/.gradle/caches/transforms-4/02de1a5f5518a9d6f7ac003e4efac66f/transformed/material-1.12.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.12.0] /home/rupa/.gradle/caches/transforms-4/02de1a5f5518a9d6f7ac003e4efac66f/transformed/material-1.12.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.camera:camera-video:1.3.1] /home/rupa/.gradle/caches/transforms-4/6a83646083af891fa5fbd402f68fbfbb/transformed/camera-video-1.3.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.camera:camera-video:1.3.1] /home/rupa/.gradle/caches/transforms-4/6a83646083af891fa5fbd402f68fbfbb/transformed/camera-video-1.3.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.camera:camera-core:1.3.1] /home/rupa/.gradle/caches/transforms-4/ec77a5864cbbb1502cbfaf419123e348/transformed/camera-core-1.3.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.camera:camera-core:1.3.1] /home/rupa/.gradle/caches/transforms-4/ec77a5864cbbb1502cbfaf419123e348/transformed/camera-core-1.3.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.camera:camera-lifecycle:1.3.1] /home/rupa/.gradle/caches/transforms-4/609495e4a9730f373825c99055cdb36f/transformed/camera-lifecycle-1.3.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.camera:camera-lifecycle:1.3.1] /home/rupa/.gradle/caches/transforms-4/609495e4a9730f373825c99055cdb36f/transformed/camera-lifecycle-1.3.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.camera:camera-camera2:1.3.1] /home/rupa/.gradle/caches/transforms-4/9f14b0c3f86b1f55f0fde8adac1beb03/transformed/camera-camera2-1.3.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.camera:camera-camera2:1.3.1] /home/rupa/.gradle/caches/transforms-4/9f14b0c3f86b1f55f0fde8adac1beb03/transformed/camera-camera2-1.3.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.camera:camera-view:1.3.1] /home/rupa/.gradle/caches/transforms-4/5d28b2258cbc8ea0e476e431909705bf/transformed/camera-view-1.3.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.camera:camera-view:1.3.1] /home/rupa/.gradle/caches/transforms-4/5d28b2258cbc8ea0e476e431909705bf/transformed/camera-view-1.3.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.biometric:biometric:1.1.0] /home/rupa/.gradle/caches/transforms-4/306c72e2c207eff4ae6124a168d550e2/transformed/biometric-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.biometric:biometric:1.1.0] /home/rupa/.gradle/caches/transforms-4/306c72e2c207eff4ae6124a168d550e2/transformed/biometric-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /home/rupa/.gradle/caches/transforms-4/844deb363bb19bef2ad2c30322aeba1a/transformed/constraintlayout-2.0.1/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /home/rupa/.gradle/caches/transforms-4/844deb363bb19bef2ad2c30322aeba1a/transformed/constraintlayout-2.0.1/AndroidManifest.xml:5:5-7:41
+MERGED from [io.coil-kt:coil-compose:2.5.0] /home/rupa/.gradle/caches/transforms-4/dbd1714a4462df4611a99ca96d69c1c0/transformed/coil-compose-2.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt:coil-compose:2.5.0] /home/rupa/.gradle/caches/transforms-4/dbd1714a4462df4611a99ca96d69c1c0/transformed/coil-compose-2.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt:coil-compose-base:2.5.0] /home/rupa/.gradle/caches/transforms-4/c8c27739008bd2fa89cb31d1bd3caffe/transformed/coil-compose-base-2.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt:coil-compose-base:2.5.0] /home/rupa/.gradle/caches/transforms-4/c8c27739008bd2fa89cb31d1bd3caffe/transformed/coil-compose-base-2.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt:coil:2.5.0] /home/rupa/.gradle/caches/transforms-4/2834f5a229746d890ba6f08d2bff3a49/transformed/coil-2.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt:coil:2.5.0] /home/rupa/.gradle/caches/transforms-4/2834f5a229746d890ba6f08d2bff3a49/transformed/coil-2.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt:coil-base:2.5.0] /home/rupa/.gradle/caches/transforms-4/fc3def87a049c1e43c21f7c3ed6b41d8/transformed/coil-base-2.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt:coil-base:2.5.0] /home/rupa/.gradle/caches/transforms-4/fc3def87a049c1e43c21f7c3ed6b41d8/transformed/coil-base-2.5.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.7.0] /home/rupa/.gradle/caches/transforms-4/d6e78babc3cc4697c0e050de65ed58ac/transformed/appcompat-resources-1.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.7.0] /home/rupa/.gradle/caches/transforms-4/d6e78babc3cc4697c0e050de65ed58ac/transformed/appcompat-resources-1.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat:1.7.0] /home/rupa/.gradle/caches/transforms-4/6d72fba9324ecc20f4f548208a1fa349/transformed/appcompat-1.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat:1.7.0] /home/rupa/.gradle/caches/transforms-4/6d72fba9324ecc20f4f548208a1fa349/transformed/appcompat-1.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/rupa/.gradle/caches/transforms-4/0d0dfeee0b6ba5796a879ad0c9ce497b/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/rupa/.gradle/caches/transforms-4/0d0dfeee0b6ba5796a879ad0c9ce497b/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /home/rupa/.gradle/caches/transforms-4/2a94446a001fd682d2e9295856d63c6c/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /home/rupa/.gradle/caches/transforms-4/2a94446a001fd682d2e9295856d63c6c/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.5.0] /home/rupa/.gradle/caches/transforms-4/72db968e53bd16f60005c127fbb019ea/transformed/transition-1.5.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.transition:transition:1.5.0] /home/rupa/.gradle/caches/transforms-4/72db968e53bd16f60005c127fbb019ea/transformed/transition-1.5.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /home/rupa/.gradle/caches/transforms-4/18449f79013d407249b69572432ea1de/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /home/rupa/.gradle/caches/transforms-4/18449f79013d407249b69572432ea1de/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/rupa/.gradle/caches/transforms-4/2edd450d1ffb72c8fa8135024073c428/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/rupa/.gradle/caches/transforms-4/2edd450d1ffb72c8fa8135024073c428/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/rupa/.gradle/caches/transforms-4/7682be25df243c3a8bfd61d7f784a367/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/rupa/.gradle/caches/transforms-4/7682be25df243c3a8bfd61d7f784a367/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/rupa/.gradle/caches/transforms-4/762ff0a9e8dd026702b6e26120b54533/transformed/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/rupa/.gradle/caches/transforms-4/762ff0a9e8dd026702b6e26120b54533/transformed/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.mlkit:barcode-scanning:17.2.0] /home/rupa/.gradle/caches/transforms-4/f4403d3306a4973feaa1ff7062e9806e/transformed/barcode-scanning-17.2.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.mlkit:barcode-scanning:17.2.0] /home/rupa/.gradle/caches/transforms-4/f4403d3306a4973feaa1ff7062e9806e/transformed/barcode-scanning-17.2.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] /home/rupa/.gradle/caches/transforms-4/fd516a53b05184b5fb8aba086666b2ab/transformed/play-services-mlkit-barcode-scanning-18.3.0/AndroidManifest.xml:6:5-44
+MERGED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] /home/rupa/.gradle/caches/transforms-4/fd516a53b05184b5fb8aba086666b2ab/transformed/play-services-mlkit-barcode-scanning-18.3.0/AndroidManifest.xml:6:5-44
+MERGED from [com.google.mlkit:barcode-scanning-common:17.0.0] /home/rupa/.gradle/caches/transforms-4/ab4bb09138a4a36375d9d8add52e886b/transformed/barcode-scanning-common-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.mlkit:barcode-scanning-common:17.0.0] /home/rupa/.gradle/caches/transforms-4/ab4bb09138a4a36375d9d8add52e886b/transformed/barcode-scanning-common-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.mlkit:vision-common:17.3.0] /home/rupa/.gradle/caches/transforms-4/4833e95feb7052a8bb2ca203e2b9a757/transformed/vision-common-17.3.0/AndroidManifest.xml:6:5-44
+MERGED from [com.google.mlkit:vision-common:17.3.0] /home/rupa/.gradle/caches/transforms-4/4833e95feb7052a8bb2ca203e2b9a757/transformed/vision-common-17.3.0/AndroidManifest.xml:6:5-44
+MERGED from [com.google.mlkit:common:18.9.0] /home/rupa/.gradle/caches/transforms-4/b788d9f7a03bb8f5e81d6d0101e9b41b/transformed/common-18.9.0/AndroidManifest.xml:6:5-44
+MERGED from [com.google.mlkit:common:18.9.0] /home/rupa/.gradle/caches/transforms-4/b788d9f7a03bb8f5e81d6d0101e9b41b/transformed/common-18.9.0/AndroidManifest.xml:6:5-44
+MERGED from [com.google.android.gms:play-services-base:18.1.0] /home/rupa/.gradle/caches/transforms-4/f97016e3ade3b276751c0d2c4003556f/transformed/play-services-base-18.1.0/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-base:18.1.0] /home/rupa/.gradle/caches/transforms-4/f97016e3ade3b276751c0d2c4003556f/transformed/play-services-base-18.1.0/AndroidManifest.xml:18:5-43
+MERGED from [com.google.mlkit:vision-interfaces:16.2.0] /home/rupa/.gradle/caches/transforms-4/f2f2758394826e80e8e0f8c0ad510c07/transformed/vision-interfaces-16.2.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.mlkit:vision-interfaces:16.2.0] /home/rupa/.gradle/caches/transforms-4/f2f2758394826e80e8e0f8c0ad510c07/transformed/vision-interfaces-16.2.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:18.0.2] /home/rupa/.gradle/caches/transforms-4/b136aeee43690d7f2777e5bd3774404a/transformed/play-services-tasks-18.0.2/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks:18.0.2] /home/rupa/.gradle/caches/transforms-4/b136aeee43690d7f2777e5bd3774404a/transformed/play-services-tasks-18.0.2/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] /home/rupa/.gradle/caches/transforms-4/c2f10fbae33ec6d67c54258b866f586e/transformed/play-services-basement-18.1.0/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] /home/rupa/.gradle/caches/transforms-4/c2f10fbae33ec6d67c54258b866f586e/transformed/play-services-basement-18.1.0/AndroidManifest.xml:18:5-43
+MERGED from [androidx.hilt:hilt-navigation-compose:1.2.0] /home/rupa/.gradle/caches/transforms-4/cd89aa17e0372a7dd9cb947c036aabf7/transformed/hilt-navigation-compose-1.2.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.hilt:hilt-navigation-compose:1.2.0] /home/rupa/.gradle/caches/transforms-4/cd89aa17e0372a7dd9cb947c036aabf7/transformed/hilt-navigation-compose-1.2.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.hilt:hilt-navigation:1.2.0] /home/rupa/.gradle/caches/transforms-4/4585a910bf2230bf5f2fbc26670e3260/transformed/hilt-navigation-1.2.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.hilt:hilt-navigation:1.2.0] /home/rupa/.gradle/caches/transforms-4/4585a910bf2230bf5f2fbc26670e3260/transformed/hilt-navigation-1.2.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-common:2.7.7] /home/rupa/.gradle/caches/transforms-4/acc5785c5781ed3b80c7eff4f3b37347/transformed/navigation-common-2.7.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common:2.7.7] /home/rupa/.gradle/caches/transforms-4/acc5785c5781ed3b80c7eff4f3b37347/transformed/navigation-common-2.7.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.7.7] /home/rupa/.gradle/caches/transforms-4/bd1311935f519d435f49ec52ed8853c8/transformed/navigation-runtime-2.7.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.7.7] /home/rupa/.gradle/caches/transforms-4/bd1311935f519d435f49ec52ed8853c8/transformed/navigation-runtime-2.7.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common-ktx:2.7.7] /home/rupa/.gradle/caches/transforms-4/a4adec1cbb784fbf62a18f003e44fe52/transformed/navigation-common-ktx-2.7.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-common-ktx:2.7.7] /home/rupa/.gradle/caches/transforms-4/a4adec1cbb784fbf62a18f003e44fe52/transformed/navigation-common-ktx-2.7.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.7] /home/rupa/.gradle/caches/transforms-4/cef9ed321b91439d7f6ba3c02c7930b9/transformed/navigation-runtime-ktx-2.7.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.7] /home/rupa/.gradle/caches/transforms-4/cef9ed321b91439d7f6ba3c02c7930b9/transformed/navigation-runtime-ktx-2.7.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-compose:2.7.7] /home/rupa/.gradle/caches/transforms-4/2f906307b05221c89c64d992be6b7a91/transformed/navigation-compose-2.7.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-compose:2.7.7] /home/rupa/.gradle/caches/transforms-4/2f906307b05221c89c64d992be6b7a91/transformed/navigation-compose-2.7.7/AndroidManifest.xml:5:5-44
+MERGED from [com.google.dagger:hilt-android:2.50] /home/rupa/.gradle/caches/transforms-4/13a3cff22d5bbdbe172102486e695ca7/transformed/hilt-android-2.50/AndroidManifest.xml:18:3-42
+MERGED from [com.google.dagger:hilt-android:2.50] /home/rupa/.gradle/caches/transforms-4/13a3cff22d5bbdbe172102486e695ca7/transformed/hilt-android-2.50/AndroidManifest.xml:18:3-42
+MERGED from [androidx.fragment:fragment:1.5.4] /home/rupa/.gradle/caches/transforms-4/2eeac2bba0175b7a0063274ec6e31202/transformed/fragment-1.5.4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.5.4] /home/rupa/.gradle/caches/transforms-4/2eeac2bba0175b7a0063274ec6e31202/transformed/fragment-1.5.4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.8.2] /home/rupa/.gradle/caches/transforms-4/19ce505037bc1caaff02ef104dde6d70/transformed/activity-1.8.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.8.2] /home/rupa/.gradle/caches/transforms-4/19ce505037bc1caaff02ef104dde6d70/transformed/activity-1.8.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity-ktx:1.8.2] /home/rupa/.gradle/caches/transforms-4/d4c220b48c92c1f2e455fd6ab3b8ce76/transformed/activity-ktx-1.8.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-ktx:1.8.2] /home/rupa/.gradle/caches/transforms-4/d4c220b48c92c1f2e455fd6ab3b8ce76/transformed/activity-ktx-1.8.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material3:material3-android:1.2.0] /home/rupa/.gradle/caches/transforms-4/463af9175f55064a9de511202f6dc994/transformed/material3-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material3:material3-android:1.2.0] /home/rupa/.gradle/caches/transforms-4/463af9175f55064a9de511202f6dc994/transformed/material3-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material:material-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/dd23e6dded7fd4e9403f2017bc577d96/transformed/material-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/dd23e6dded7fd4e9403f2017bc577d96/transformed/material-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-core-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/7411b19e6eff97864cf1252a32037441/transformed/material-icons-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-core-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/7411b19e6eff97864cf1252a32037441/transformed/material-icons-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-extended-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/6f1209f8242aa9dfbac8ff356cd86691/transformed/material-icons-extended-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-extended-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/6f1209f8242aa9dfbac8ff356cd86691/transformed/material-icons-extended-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-ripple-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/54b79e19973ab18bac2f70cc87ed376f/transformed/material-ripple-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-ripple-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/54b79e19973ab18bac2f70cc87ed376f/transformed/material-ripple-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-core-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/e90206b897e376724e90886a75b14ad9/transformed/animation-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-core-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/e90206b897e376724e90886a75b14ad9/transformed/animation-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/809ca1b9aa78ffd1f0386d0748d692ed/transformed/animation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/809ca1b9aa78ffd1f0386d0748d692ed/transformed/animation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/1c0b84c5af89bb1c46547c7b4ee64590/transformed/foundation-layout-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/1c0b84c5af89bb1c46547c7b4ee64590/transformed/foundation-layout-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/052910668df1e086481ebd511ac7da63/transformed/foundation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/052910668df1e086481ebd511ac7da63/transformed/foundation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-data-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/c25ddb74d9b9daa164c7b6792d261be5/transformed/ui-tooling-data-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-data-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/c25ddb74d9b9daa164c7b6792d261be5/transformed/ui-tooling-data-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-unit-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/4a2766daef29fc24ac300c907881d5db/transformed/ui-unit-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-unit-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/4a2766daef29fc24ac300c907881d5db/transformed/ui-unit-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-geometry-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/722360ec67cca2e072301f427cc2620a/transformed/ui-geometry-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-geometry-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/722360ec67cca2e072301f427cc2620a/transformed/ui-geometry-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-util-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/4f86a41f6f34a2cbb625c5193e635380/transformed/ui-util-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-util-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/4f86a41f6f34a2cbb625c5193e635380/transformed/ui-util-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-text-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/36315a27769743745e2ece0c187c776d/transformed/ui-text-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-text-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/36315a27769743745e2ece0c187c776d/transformed/ui-text-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-graphics-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/c1059c641c9a641dad6d83b42b9e7b24/transformed/ui-graphics-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-graphics-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/c1059c641c9a641dad6d83b42b9e7b24/transformed/ui-graphics-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/9956ceefcfc3de51039a5369bc061c62/transformed/ui-tooling-preview-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/9956ceefcfc3de51039a5369bc061c62/transformed/ui-tooling-preview-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/12af4d062272f00af29657348eb9a7b6/transformed/ui-tooling-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/12af4d062272f00af29657348eb9a7b6/transformed/ui-tooling-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity-compose:1.8.2] /home/rupa/.gradle/caches/transforms-4/1465582dfddcd1c620c2be34bb0f46bc/transformed/activity-compose-1.8.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-compose:1.8.2] /home/rupa/.gradle/caches/transforms-4/1465582dfddcd1c620c2be34bb0f46bc/transformed/activity-compose-1.8.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/rupa/.gradle/caches/transforms-4/d849d560ccca28ef332d4f06a758ff6c/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/rupa/.gradle/caches/transforms-4/d849d560ccca28ef332d4f06a758ff6c/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/rupa/.gradle/caches/transforms-4/a53a82b45d096f6415a19ac712271adb/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/rupa/.gradle/caches/transforms-4/a53a82b45d096f6415a19ac712271adb/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0] /home/rupa/.gradle/caches/transforms-4/96f76f9c85f528c2deaad573886c9955/transformed/lifecycle-livedata-core-ktx-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0] /home/rupa/.gradle/caches/transforms-4/96f76f9c85f528c2deaad573886c9955/transformed/lifecycle-livedata-core-ktx-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.7.0] /home/rupa/.gradle/caches/transforms-4/2541996d7c35559a7cf9c5d246dd4038/transformed/lifecycle-livedata-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.7.0] /home/rupa/.gradle/caches/transforms-4/2541996d7c35559a7cf9c5d246dd4038/transformed/lifecycle-livedata-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] /home/rupa/.gradle/caches/transforms-4/a232aaa062bb63fdfba968415c107149/transformed/lifecycle-livedata-core-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] /home/rupa/.gradle/caches/transforms-4/a232aaa062bb63fdfba968415c107149/transformed/lifecycle-livedata-core-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /home/rupa/.gradle/caches/transforms-4/c308220584390e936f0ca84e54f76411/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /home/rupa/.gradle/caches/transforms-4/c308220584390e936f0ca84e54f76411/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /home/rupa/.gradle/caches/transforms-4/cc118e6383ddca6bbfe326d8ae6f1af0/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /home/rupa/.gradle/caches/transforms-4/cc118e6383ddca6bbfe326d8ae6f1af0/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] /home/rupa/.gradle/caches/transforms-4/1667aea74ddc7df6f59eb570c671bb91/transformed/lifecycle-viewmodel-savedstate-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] /home/rupa/.gradle/caches/transforms-4/1667aea74ddc7df6f59eb570c671bb91/transformed/lifecycle-viewmodel-savedstate-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0] /home/rupa/.gradle/caches/transforms-4/bd0ae15e8c10880c45ed956c2ebec911/transformed/lifecycle-viewmodel-ktx-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0] /home/rupa/.gradle/caches/transforms-4/bd0ae15e8c10880c45ed956c2ebec911/transformed/lifecycle-viewmodel-ktx-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.7.0] /home/rupa/.gradle/caches/transforms-4/6746ab977ddb29f421c1a206be435ab0/transformed/lifecycle-runtime-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.7.0] /home/rupa/.gradle/caches/transforms-4/6746ab977ddb29f421c1a206be435ab0/transformed/lifecycle-runtime-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.7.0] /home/rupa/.gradle/caches/transforms-4/0029566b2226e56843fe85185762d005/transformed/lifecycle-viewmodel-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.7.0] /home/rupa/.gradle/caches/transforms-4/0029566b2226e56843fe85185762d005/transformed/lifecycle-viewmodel-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /home/rupa/.gradle/caches/transforms-4/7a683566944ff58760cee52d359412ee/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /home/rupa/.gradle/caches/transforms-4/7a683566944ff58760cee52d359412ee/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.7.0] /home/rupa/.gradle/caches/transforms-4/a545e184c17942c8bb111a0cca313aab/transformed/lifecycle-runtime-ktx-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.7.0] /home/rupa/.gradle/caches/transforms-4/a545e184c17942c8bb111a0cca313aab/transformed/lifecycle-runtime-ktx-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0] /home/rupa/.gradle/caches/transforms-4/2ee25fe9a4734a7e6d5ed478b425f52a/transformed/lifecycle-viewmodel-compose-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0] /home/rupa/.gradle/caches/transforms-4/2ee25fe9a4734a7e6d5ed478b425f52a/transformed/lifecycle-viewmodel-compose-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.accompanist:accompanist-drawablepainter:0.32.0] /home/rupa/.gradle/caches/transforms-4/c758752830a0f5638862249440b7ef1d/transformed/accompanist-drawablepainter-0.32.0/AndroidManifest.xml:21:5-44
+MERGED from [com.google.accompanist:accompanist-drawablepainter:0.32.0] /home/rupa/.gradle/caches/transforms-4/c758752830a0f5638862249440b7ef1d/transformed/accompanist-drawablepainter-0.32.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.compose.ui:ui-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/3759a36f0f11e84e8efc908380ff2d80/transformed/ui-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/3759a36f0f11e84e8efc908380ff2d80/transformed/ui-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] /home/rupa/.gradle/caches/transforms-4/5b5d8f4aee01f72f24f4d82d87ffaec1/transformed/emoji2-views-helper-1.3.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] /home/rupa/.gradle/caches/transforms-4/5b5d8f4aee01f72f24f4d82d87ffaec1/transformed/emoji2-views-helper-1.3.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.3.0] /home/rupa/.gradle/caches/transforms-4/ad9c1ce0932180eaa17e9fe798af9148/transformed/emoji2-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.3.0] /home/rupa/.gradle/caches/transforms-4/ad9c1ce0932180eaa17e9fe798af9148/transformed/emoji2-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/rupa/.gradle/caches/transforms-4/4e41cac64e358918b26d6105d731a98f/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/rupa/.gradle/caches/transforms-4/4e41cac64e358918b26d6105d731a98f/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/rupa/.gradle/caches/transforms-4/0cf8c34826c586c47285cec35291ea04/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/rupa/.gradle/caches/transforms-4/0cf8c34826c586c47285cec35291ea04/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.1.0] /home/rupa/.gradle/caches/transforms-4/a7814bde46007f8867f09074cb49ebb9/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] /home/rupa/.gradle/caches/transforms-4/a7814bde46007f8867f09074cb49ebb9/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.autofill:autofill:1.0.0] /home/rupa/.gradle/caches/transforms-4/a3758daede7cd2a10ae3bc9346979d2f/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.autofill:autofill:1.0.0] /home/rupa/.gradle/caches/transforms-4/a3758daede7cd2a10ae3bc9346979d2f/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.13.1] /home/rupa/.gradle/caches/transforms-4/bd52f1e24a1f383a57012d0ceaa67877/transformed/core-1.13.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.13.1] /home/rupa/.gradle/caches/transforms-4/bd52f1e24a1f383a57012d0ceaa67877/transformed/core-1.13.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /home/rupa/.gradle/caches/transforms-4/044b5021f4c6bf41c8bd3630a6798261/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /home/rupa/.gradle/caches/transforms-4/044b5021f4c6bf41c8bd3630a6798261/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.core:core-ktx:1.13.1] /home/rupa/.gradle/caches/transforms-4/baab8d2a02531708bb25e3056274182b/transformed/core-ktx-1.13.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.13.1] /home/rupa/.gradle/caches/transforms-4/baab8d2a02531708bb25e3056274182b/transformed/core-ktx-1.13.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.room:room-runtime:2.6.1] /home/rupa/.gradle/caches/transforms-4/7df126978c2e982a4c9efbc0d5b56228/transformed/room-runtime-2.6.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.room:room-runtime:2.6.1] /home/rupa/.gradle/caches/transforms-4/7df126978c2e982a4c9efbc0d5b56228/transformed/room-runtime-2.6.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.room:room-ktx:2.6.1] /home/rupa/.gradle/caches/transforms-4/349f982ec8fc3d320802221c2dcc72f8/transformed/room-ktx-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.room:room-ktx:2.6.1] /home/rupa/.gradle/caches/transforms-4/349f982ec8fc3d320802221c2dcc72f8/transformed/room-ktx-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [net.zetetic:android-database-sqlcipher:4.5.4] /home/rupa/.gradle/caches/transforms-4/7c88dc2badb46331bf54373b9abb1409/transformed/android-database-sqlcipher-4.5.4/AndroidManifest.xml:5:5-7:41
+MERGED from [net.zetetic:android-database-sqlcipher:4.5.4] /home/rupa/.gradle/caches/transforms-4/7c88dc2badb46331bf54373b9abb1409/transformed/android-database-sqlcipher-4.5.4/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.sqlite:sqlite-framework:2.4.0] /home/rupa/.gradle/caches/transforms-4/f2d024d53efd6b0504e66ff6254eb195/transformed/sqlite-framework-2.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.4.0] /home/rupa/.gradle/caches/transforms-4/f2d024d53efd6b0504e66ff6254eb195/transformed/sqlite-framework-2.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.4.0] /home/rupa/.gradle/caches/transforms-4/71472f75d6d6cef3658d7eb008862aa4/transformed/sqlite-2.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.4.0] /home/rupa/.gradle/caches/transforms-4/71472f75d6d6cef3658d7eb008862aa4/transformed/sqlite-2.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-ktx:2.4.0] /home/rupa/.gradle/caches/transforms-4/1477774cf60e4f1128b995728d7f97ed/transformed/sqlite-ktx-2.4.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.sqlite:sqlite-ktx:2.4.0] /home/rupa/.gradle/caches/transforms-4/1477774cf60e4f1128b995728d7f97ed/transformed/sqlite-ktx-2.4.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.datastore:datastore-core-android:1.1.1] /home/rupa/.gradle/caches/transforms-4/1f93dc007753e19cdbb0573b69077996/transformed/datastore-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.datastore:datastore-core-android:1.1.1] /home/rupa/.gradle/caches/transforms-4/1f93dc007753e19cdbb0573b69077996/transformed/datastore-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.datastore:datastore-android:1.1.1] /home/rupa/.gradle/caches/transforms-4/f241e0bbdd7dac3d2ad83984bee632fe/transformed/datastore-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.datastore:datastore-android:1.1.1] /home/rupa/.gradle/caches/transforms-4/f241e0bbdd7dac3d2ad83984bee632fe/transformed/datastore-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.datastore:datastore-preferences-android:1.1.1] /home/rupa/.gradle/caches/transforms-4/b485f00ac033886a3225bedb86a8d5fd/transformed/datastore-preferences-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.datastore:datastore-preferences-android:1.1.1] /home/rupa/.gradle/caches/transforms-4/b485f00ac033886a3225bedb86a8d5fd/transformed/datastore-preferences-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/a2710c6f9744a38ce44f2f3eb742e907/transformed/runtime-saveable-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/a2710c6f9744a38ce44f2f3eb742e907/transformed/runtime-saveable-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/c6ea216ec74803c7b611996fcfeba5ff/transformed/runtime-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/c6ea216ec74803c7b611996fcfeba5ff/transformed/runtime-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.0] /home/rupa/.gradle/caches/transforms-4/ba17b1497d7fe7e689a11178e0fc27fe/transformed/annotation-experimental-1.4.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.0] /home/rupa/.gradle/caches/transforms-4/ba17b1497d7fe7e689a11178e0fc27fe/transformed/annotation-experimental-1.4.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.security:security-crypto:1.1.0-alpha06] /home/rupa/.gradle/caches/transforms-4/3fd35d1c7a34654cf816a105cb9da1ef/transformed/security-crypto-1.1.0-alpha06/AndroidManifest.xml:20:5-44
+MERGED from [androidx.security:security-crypto:1.1.0-alpha06] /home/rupa/.gradle/caches/transforms-4/3fd35d1c7a34654cf816a105cb9da1ef/transformed/security-crypto-1.1.0-alpha06/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/rupa/.gradle/caches/transforms-4/7eeef038130400e7e35b94c0781f497f/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/rupa/.gradle/caches/transforms-4/7eeef038130400e7e35b94c0781f497f/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/rupa/.gradle/caches/transforms-4/bcc5f239610b1bb9bf4196407a3dbf16/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/rupa/.gradle/caches/transforms-4/bcc5f239610b1bb9bf4196407a3dbf16/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/rupa/.gradle/caches/transforms-4/4ca98143fcf0d80b55530509d6ca754a/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/rupa/.gradle/caches/transforms-4/4ca98143fcf0d80b55530509d6ca754a/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/rupa/.gradle/caches/transforms-4/919d49a05a0fe3bbb134d4057b7d24c8/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/rupa/.gradle/caches/transforms-4/919d49a05a0fe3bbb134d4057b7d24c8/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/rupa/.gradle/caches/transforms-4/90e0706bd90c469aaf0b79d7fe266d68/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/rupa/.gradle/caches/transforms-4/90e0706bd90c469aaf0b79d7fe266d68/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/rupa/.gradle/caches/transforms-4/ebf16b46643aad67c0613180b6cfab30/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/rupa/.gradle/caches/transforms-4/ebf16b46643aad67c0613180b6cfab30/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/rupa/.gradle/caches/transforms-4/51ceef0fd492441d3c63b732a12982fa/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/rupa/.gradle/caches/transforms-4/51ceef0fd492441d3c63b732a12982fa/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /home/rupa/.gradle/caches/transforms-4/76b48fe2b95b4e0e83785f9e713b6fd3/transformed/transport-runtime-2.2.6/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /home/rupa/.gradle/caches/transforms-4/76b48fe2b95b4e0e83785f9e713b6fd3/transformed/transport-runtime-2.2.6/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-api:2.2.1] /home/rupa/.gradle/caches/transforms-4/9543fe2a60fa47734cee37875cd7b97e/transformed/transport-api-2.2.1/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-api:2.2.1] /home/rupa/.gradle/caches/transforms-4/9543fe2a60fa47734cee37875cd7b97e/transformed/transport-api-2.2.1/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-components:16.1.0] /home/rupa/.gradle/caches/transforms-4/6ef4a85115dc07accc18853cf1ebb367/transformed/firebase-components-16.1.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-components:16.1.0] /home/rupa/.gradle/caches/transforms-4/6ef4a85115dc07accc18853cf1ebb367/transformed/firebase-components-16.1.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-encoders-json:17.1.0] /home/rupa/.gradle/caches/transforms-4/98fa4d57fd138a51719a5cd4aca432a6/transformed/firebase-encoders-json-17.1.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-encoders-json:17.1.0] /home/rupa/.gradle/caches/transforms-4/98fa4d57fd138a51719a5cd4aca432a6/transformed/firebase-encoders-json-17.1.0/AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.6] /home/rupa/.gradle/caches/transforms-4/f4429cd8b072e918b30b5f1d70b1df4d/transformed/exifinterface-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.6] /home/rupa/.gradle/caches/transforms-4/f4429cd8b072e918b30b5f1d70b1df4d/transformed/exifinterface-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /home/rupa/.gradle/caches/transforms-4/ce144985820cb6bc4336bf3b1db767b2/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /home/rupa/.gradle/caches/transforms-4/ce144985820cb6bc4336bf3b1db767b2/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/rupa/.gradle/caches/transforms-4/3950fd3ef519dcc790724fed4e4caeb4/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/rupa/.gradle/caches/transforms-4/3950fd3ef519dcc790724fed4e4caeb4/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/rupa/.gradle/caches/transforms-4/3b8336bc29bda4eeb51890a23f1aefbe/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/rupa/.gradle/caches/transforms-4/3b8336bc29bda4eeb51890a23f1aefbe/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/rupa/.gradle/caches/transforms-4/861e14edf220ff0376ae6c26205635fb/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/rupa/.gradle/caches/transforms-4/861e14edf220ff0376ae6c26205635fb/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.dagger:dagger-lint-aar:2.50] /home/rupa/.gradle/caches/transforms-4/032f075bdda5bcd51cb163a0b44cb32a/transformed/dagger-lint-aar-2.50/AndroidManifest.xml:18:3-42
+MERGED from [com.google.dagger:dagger-lint-aar:2.50] /home/rupa/.gradle/caches/transforms-4/032f075bdda5bcd51cb163a0b44cb32a/transformed/dagger-lint-aar-2.50/AndroidManifest.xml:18:3-42
+MERGED from [com.caverock:androidsvg-aar:1.4] /home/rupa/.gradle/caches/transforms-4/d3682c265c9190b24bb5de06be28f0db/transformed/androidsvg-aar-1.4/AndroidManifest.xml:7:5-9:41
+MERGED from [com.caverock:androidsvg-aar:1.4] /home/rupa/.gradle/caches/transforms-4/d3682c265c9190b24bb5de06be28f0db/transformed/androidsvg-aar-1.4/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.odml:image:1.0.0-beta1] /home/rupa/.gradle/caches/transforms-4/887b7231e2ce3a436046fad1eaa26fb5/transformed/image-1.0.0-beta1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.odml:image:1.0.0-beta1] /home/rupa/.gradle/caches/transforms-4/887b7231e2ce3a436046fad1eaa26fb5/transformed/image-1.0.0-beta1/AndroidManifest.xml:5:5-44
+	android:targetSdkVersion
+		INJECTED from /home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/rupa/Desktop/Project/2fa app/app/src/main/AndroidManifest.xml
+service#androidx.camera.core.impl.MetadataHolderService
+ADDED from [androidx.camera:camera-core:1.3.1] /home/rupa/.gradle/caches/transforms-4/ec77a5864cbbb1502cbfaf419123e348/transformed/camera-core-1.3.1/AndroidManifest.xml:29:9-33:78
+MERGED from [androidx.camera:camera-camera2:1.3.1] /home/rupa/.gradle/caches/transforms-4/9f14b0c3f86b1f55f0fde8adac1beb03/transformed/camera-camera2-1.3.1/AndroidManifest.xml:24:9-33:19
+MERGED from [androidx.camera:camera-camera2:1.3.1] /home/rupa/.gradle/caches/transforms-4/9f14b0c3f86b1f55f0fde8adac1beb03/transformed/camera-camera2-1.3.1/AndroidManifest.xml:24:9-33:19
+	android:enabled
+		ADDED from [androidx.camera:camera-core:1.3.1] /home/rupa/.gradle/caches/transforms-4/ec77a5864cbbb1502cbfaf419123e348/transformed/camera-core-1.3.1/AndroidManifest.xml:31:13-36
+	android:exported
+		ADDED from [androidx.camera:camera-core:1.3.1] /home/rupa/.gradle/caches/transforms-4/ec77a5864cbbb1502cbfaf419123e348/transformed/camera-core-1.3.1/AndroidManifest.xml:32:13-37
+	tools:ignore
+		ADDED from [androidx.camera:camera-core:1.3.1] /home/rupa/.gradle/caches/transforms-4/ec77a5864cbbb1502cbfaf419123e348/transformed/camera-core-1.3.1/AndroidManifest.xml:33:13-75
+	android:name
+		ADDED from [androidx.camera:camera-core:1.3.1] /home/rupa/.gradle/caches/transforms-4/ec77a5864cbbb1502cbfaf419123e348/transformed/camera-core-1.3.1/AndroidManifest.xml:30:13-75
+meta-data#androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER
+ADDED from [androidx.camera:camera-camera2:1.3.1] /home/rupa/.gradle/caches/transforms-4/9f14b0c3f86b1f55f0fde8adac1beb03/transformed/camera-camera2-1.3.1/AndroidManifest.xml:30:13-32:89
+	android:value
+		ADDED from [androidx.camera:camera-camera2:1.3.1] /home/rupa/.gradle/caches/transforms-4/9f14b0c3f86b1f55f0fde8adac1beb03/transformed/camera-camera2-1.3.1/AndroidManifest.xml:32:17-86
+	android:name
+		ADDED from [androidx.camera:camera-camera2:1.3.1] /home/rupa/.gradle/caches/transforms-4/9f14b0c3f86b1f55f0fde8adac1beb03/transformed/camera-camera2-1.3.1/AndroidManifest.xml:31:17-103
+service#com.google.mlkit.common.internal.MlKitComponentDiscoveryService
+ADDED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] /home/rupa/.gradle/caches/transforms-4/fd516a53b05184b5fb8aba086666b2ab/transformed/play-services-mlkit-barcode-scanning-18.3.0/AndroidManifest.xml:9:9-15:19
+MERGED from [com.google.mlkit:vision-common:17.3.0] /home/rupa/.gradle/caches/transforms-4/4833e95feb7052a8bb2ca203e2b9a757/transformed/vision-common-17.3.0/AndroidManifest.xml:9:9-15:19
+MERGED from [com.google.mlkit:vision-common:17.3.0] /home/rupa/.gradle/caches/transforms-4/4833e95feb7052a8bb2ca203e2b9a757/transformed/vision-common-17.3.0/AndroidManifest.xml:9:9-15:19
+MERGED from [com.google.mlkit:common:18.9.0] /home/rupa/.gradle/caches/transforms-4/b788d9f7a03bb8f5e81d6d0101e9b41b/transformed/common-18.9.0/AndroidManifest.xml:15:9-23:19
+MERGED from [com.google.mlkit:common:18.9.0] /home/rupa/.gradle/caches/transforms-4/b788d9f7a03bb8f5e81d6d0101e9b41b/transformed/common-18.9.0/AndroidManifest.xml:15:9-23:19
+	android:exported
+		ADDED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] /home/rupa/.gradle/caches/transforms-4/fd516a53b05184b5fb8aba086666b2ab/transformed/play-services-mlkit-barcode-scanning-18.3.0/AndroidManifest.xml:11:13-37
+	tools:targetApi
+		ADDED from [com.google.mlkit:common:18.9.0] /home/rupa/.gradle/caches/transforms-4/b788d9f7a03bb8f5e81d6d0101e9b41b/transformed/common-18.9.0/AndroidManifest.xml:19:13-32
+	android:directBootAware
+		ADDED from [com.google.mlkit:common:18.9.0] /home/rupa/.gradle/caches/transforms-4/b788d9f7a03bb8f5e81d6d0101e9b41b/transformed/common-18.9.0/AndroidManifest.xml:17:13-43
+	android:name
+		ADDED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] /home/rupa/.gradle/caches/transforms-4/fd516a53b05184b5fb8aba086666b2ab/transformed/play-services-mlkit-barcode-scanning-18.3.0/AndroidManifest.xml:10:13-91
+meta-data#com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar
+ADDED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] /home/rupa/.gradle/caches/transforms-4/fd516a53b05184b5fb8aba086666b2ab/transformed/play-services-mlkit-barcode-scanning-18.3.0/AndroidManifest.xml:12:13-14:85
+	android:value
+		ADDED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] /home/rupa/.gradle/caches/transforms-4/fd516a53b05184b5fb8aba086666b2ab/transformed/play-services-mlkit-barcode-scanning-18.3.0/AndroidManifest.xml:14:17-82
+	android:name
+		ADDED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] /home/rupa/.gradle/caches/transforms-4/fd516a53b05184b5fb8aba086666b2ab/transformed/play-services-mlkit-barcode-scanning-18.3.0/AndroidManifest.xml:13:17-120
+meta-data#com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar
+ADDED from [com.google.mlkit:vision-common:17.3.0] /home/rupa/.gradle/caches/transforms-4/4833e95feb7052a8bb2ca203e2b9a757/transformed/vision-common-17.3.0/AndroidManifest.xml:12:13-14:85
+	android:value
+		ADDED from [com.google.mlkit:vision-common:17.3.0] /home/rupa/.gradle/caches/transforms-4/4833e95feb7052a8bb2ca203e2b9a757/transformed/vision-common-17.3.0/AndroidManifest.xml:14:17-82
+	android:name
+		ADDED from [com.google.mlkit:vision-common:17.3.0] /home/rupa/.gradle/caches/transforms-4/4833e95feb7052a8bb2ca203e2b9a757/transformed/vision-common-17.3.0/AndroidManifest.xml:13:17-124
+provider#com.google.mlkit.common.internal.MlKitInitProvider
+ADDED from [com.google.mlkit:common:18.9.0] /home/rupa/.gradle/caches/transforms-4/b788d9f7a03bb8f5e81d6d0101e9b41b/transformed/common-18.9.0/AndroidManifest.xml:9:9-13:38
+	android:authorities
+		ADDED from [com.google.mlkit:common:18.9.0] /home/rupa/.gradle/caches/transforms-4/b788d9f7a03bb8f5e81d6d0101e9b41b/transformed/common-18.9.0/AndroidManifest.xml:11:13-69
+	android:exported
+		ADDED from [com.google.mlkit:common:18.9.0] /home/rupa/.gradle/caches/transforms-4/b788d9f7a03bb8f5e81d6d0101e9b41b/transformed/common-18.9.0/AndroidManifest.xml:12:13-37
+	android:initOrder
+		ADDED from [com.google.mlkit:common:18.9.0] /home/rupa/.gradle/caches/transforms-4/b788d9f7a03bb8f5e81d6d0101e9b41b/transformed/common-18.9.0/AndroidManifest.xml:13:13-35
+	android:name
+		ADDED from [com.google.mlkit:common:18.9.0] /home/rupa/.gradle/caches/transforms-4/b788d9f7a03bb8f5e81d6d0101e9b41b/transformed/common-18.9.0/AndroidManifest.xml:10:13-78
+meta-data#com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar
+ADDED from [com.google.mlkit:common:18.9.0] /home/rupa/.gradle/caches/transforms-4/b788d9f7a03bb8f5e81d6d0101e9b41b/transformed/common-18.9.0/AndroidManifest.xml:20:13-22:85
+	android:value
+		ADDED from [com.google.mlkit:common:18.9.0] /home/rupa/.gradle/caches/transforms-4/b788d9f7a03bb8f5e81d6d0101e9b41b/transformed/common-18.9.0/AndroidManifest.xml:22:17-82
+	android:name
+		ADDED from [com.google.mlkit:common:18.9.0] /home/rupa/.gradle/caches/transforms-4/b788d9f7a03bb8f5e81d6d0101e9b41b/transformed/common-18.9.0/AndroidManifest.xml:21:17-120
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:18.1.0] /home/rupa/.gradle/caches/transforms-4/f97016e3ade3b276751c0d2c4003556f/transformed/play-services-base-18.1.0/AndroidManifest.xml:20:9-22:45
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:18.1.0] /home/rupa/.gradle/caches/transforms-4/f97016e3ade3b276751c0d2c4003556f/transformed/play-services-base-18.1.0/AndroidManifest.xml:22:19-43
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:18.1.0] /home/rupa/.gradle/caches/transforms-4/f97016e3ade3b276751c0d2c4003556f/transformed/play-services-base-18.1.0/AndroidManifest.xml:21:19-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:18.1.0] /home/rupa/.gradle/caches/transforms-4/f97016e3ade3b276751c0d2c4003556f/transformed/play-services-base-18.1.0/AndroidManifest.xml:20:19-85
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:18.1.0] /home/rupa/.gradle/caches/transforms-4/c2f10fbae33ec6d67c54258b866f586e/transformed/play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:18.1.0] /home/rupa/.gradle/caches/transforms-4/c2f10fbae33ec6d67c54258b866f586e/transformed/play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:18.1.0] /home/rupa/.gradle/caches/transforms-4/c2f10fbae33ec6d67c54258b866f586e/transformed/play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
+activity#androidx.compose.ui.tooling.PreviewActivity
+ADDED from [androidx.compose.ui:ui-tooling-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/12af4d062272f00af29657348eb9a7b6/transformed/ui-tooling-release/AndroidManifest.xml:23:9-25:39
+	android:exported
+		ADDED from [androidx.compose.ui:ui-tooling-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/12af4d062272f00af29657348eb9a7b6/transformed/ui-tooling-release/AndroidManifest.xml:25:13-36
+	android:name
+		ADDED from [androidx.compose.ui:ui-tooling-android:1.6.1] /home/rupa/.gradle/caches/transforms-4/12af4d062272f00af29657348eb9a7b6/transformed/ui-tooling-release/AndroidManifest.xml:24:13-71
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] /home/rupa/.gradle/caches/transforms-4/7a683566944ff58760cee52d359412ee/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.emoji2:emoji2:1.3.0] /home/rupa/.gradle/caches/transforms-4/ad9c1ce0932180eaa17e9fe798af9148/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.emoji2:emoji2:1.3.0] /home/rupa/.gradle/caches/transforms-4/ad9c1ce0932180eaa17e9fe798af9148/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/rupa/.gradle/caches/transforms-4/919d49a05a0fe3bbb134d4057b7d24c8/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/rupa/.gradle/caches/transforms-4/919d49a05a0fe3bbb134d4057b7d24c8/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] /home/rupa/.gradle/caches/transforms-4/7a683566944ff58760cee52d359412ee/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:28:13-31
+	android:authorities
+		ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] /home/rupa/.gradle/caches/transforms-4/7a683566944ff58760cee52d359412ee/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:26:13-68
+	android:exported
+		ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] /home/rupa/.gradle/caches/transforms-4/7a683566944ff58760cee52d359412ee/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] /home/rupa/.gradle/caches/transforms-4/7a683566944ff58760cee52d359412ee/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:25:13-67
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] /home/rupa/.gradle/caches/transforms-4/7a683566944ff58760cee52d359412ee/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] /home/rupa/.gradle/caches/transforms-4/7a683566944ff58760cee52d359412ee/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] /home/rupa/.gradle/caches/transforms-4/7a683566944ff58760cee52d359412ee/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.3.0] /home/rupa/.gradle/caches/transforms-4/ad9c1ce0932180eaa17e9fe798af9148/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/rupa/.gradle/caches/transforms-4/ad9c1ce0932180eaa17e9fe798af9148/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/rupa/.gradle/caches/transforms-4/ad9c1ce0932180eaa17e9fe798af9148/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.1] /home/rupa/.gradle/caches/transforms-4/bd52f1e24a1f383a57012d0ceaa67877/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.13.1] /home/rupa/.gradle/caches/transforms-4/bd52f1e24a1f383a57012d0ceaa67877/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.13.1] /home/rupa/.gradle/caches/transforms-4/bd52f1e24a1f383a57012d0ceaa67877/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+permission#com.authvault.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.1] /home/rupa/.gradle/caches/transforms-4/bd52f1e24a1f383a57012d0ceaa67877/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.13.1] /home/rupa/.gradle/caches/transforms-4/bd52f1e24a1f383a57012d0ceaa67877/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.13.1] /home/rupa/.gradle/caches/transforms-4/bd52f1e24a1f383a57012d0ceaa67877/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.1] /home/rupa/.gradle/caches/transforms-4/bd52f1e24a1f383a57012d0ceaa67877/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.13.1] /home/rupa/.gradle/caches/transforms-4/bd52f1e24a1f383a57012d0ceaa67877/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+uses-permission#com.authvault.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.1] /home/rupa/.gradle/caches/transforms-4/bd52f1e24a1f383a57012d0ceaa67877/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.13.1] /home/rupa/.gradle/caches/transforms-4/bd52f1e24a1f383a57012d0ceaa67877/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+service#androidx.room.MultiInstanceInvalidationService
+ADDED from [androidx.room:room-runtime:2.6.1] /home/rupa/.gradle/caches/transforms-4/7df126978c2e982a4c9efbc0d5b56228/transformed/room-runtime-2.6.1/AndroidManifest.xml:24:9-28:63
+	android:exported
+		ADDED from [androidx.room:room-runtime:2.6.1] /home/rupa/.gradle/caches/transforms-4/7df126978c2e982a4c9efbc0d5b56228/transformed/room-runtime-2.6.1/AndroidManifest.xml:27:13-37
+	tools:ignore
+		ADDED from [androidx.room:room-runtime:2.6.1] /home/rupa/.gradle/caches/transforms-4/7df126978c2e982a4c9efbc0d5b56228/transformed/room-runtime-2.6.1/AndroidManifest.xml:28:13-60
+	android:directBootAware
+		ADDED from [androidx.room:room-runtime:2.6.1] /home/rupa/.gradle/caches/transforms-4/7df126978c2e982a4c9efbc0d5b56228/transformed/room-runtime-2.6.1/AndroidManifest.xml:26:13-43
+	android:name
+		ADDED from [androidx.room:room-runtime:2.6.1] /home/rupa/.gradle/caches/transforms-4/7df126978c2e982a4c9efbc0d5b56228/transformed/room-runtime-2.6.1/AndroidManifest.xml:25:13-74
+meta-data#androidx.profileinstaller.ProfileInstallerInitializer
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+receiver#androidx.profileinstaller.ProfileInstallReceiver
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+	android:enabled
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+	android:permission
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+	android:directBootAware
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+intent-filter#action:name:androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+action#androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+intent-filter#action:name:androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+action#androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+intent-filter#action:name:androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+action#androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+intent-filter#action:name:androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+action#androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/rupa/.gradle/caches/transforms-4/dcdd5be736286a611a17aaae653a1bde/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/rupa/.gradle/caches/transforms-4/51ceef0fd492441d3c63b732a12982fa/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /home/rupa/.gradle/caches/transforms-4/76b48fe2b95b4e0e83785f9e713b6fd3/transformed/transport-runtime-2.2.6/AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /home/rupa/.gradle/caches/transforms-4/76b48fe2b95b4e0e83785f9e713b6fd3/transformed/transport-runtime-2.2.6/AndroidManifest.xml:22:5-79
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/rupa/.gradle/caches/transforms-4/51ceef0fd492441d3c63b732a12982fa/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:25:22-76
+service#com.google.android.datatransport.runtime.backends.TransportBackendDiscovery
+ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/rupa/.gradle/caches/transforms-4/51ceef0fd492441d3c63b732a12982fa/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /home/rupa/.gradle/caches/transforms-4/76b48fe2b95b4e0e83785f9e713b6fd3/transformed/transport-runtime-2.2.6/AndroidManifest.xml:36:9-38:40
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /home/rupa/.gradle/caches/transforms-4/76b48fe2b95b4e0e83785f9e713b6fd3/transformed/transport-runtime-2.2.6/AndroidManifest.xml:36:9-38:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/rupa/.gradle/caches/transforms-4/51ceef0fd492441d3c63b732a12982fa/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:31:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/rupa/.gradle/caches/transforms-4/51ceef0fd492441d3c63b732a12982fa/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:30:13-103
+meta-data#backend:com.google.android.datatransport.cct.CctBackendFactory
+ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/rupa/.gradle/caches/transforms-4/51ceef0fd492441d3c63b732a12982fa/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:32:13-34:39
+	android:value
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/rupa/.gradle/caches/transforms-4/51ceef0fd492441d3c63b732a12982fa/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:34:17-36
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/rupa/.gradle/caches/transforms-4/51ceef0fd492441d3c63b732a12982fa/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:33:17-94
+service#com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
+ADDED from [com.google.android.datatransport:transport-runtime:2.2.6] /home/rupa/.gradle/caches/transforms-4/76b48fe2b95b4e0e83785f9e713b6fd3/transformed/transport-runtime-2.2.6/AndroidManifest.xml:26:9-30:19
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.6] /home/rupa/.gradle/caches/transforms-4/76b48fe2b95b4e0e83785f9e713b6fd3/transformed/transport-runtime-2.2.6/AndroidManifest.xml:28:13-37
+	android:permission
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.6] /home/rupa/.gradle/caches/transforms-4/76b48fe2b95b4e0e83785f9e713b6fd3/transformed/transport-runtime-2.2.6/AndroidManifest.xml:29:13-69
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.6] /home/rupa/.gradle/caches/transforms-4/76b48fe2b95b4e0e83785f9e713b6fd3/transformed/transport-runtime-2.2.6/AndroidManifest.xml:27:13-117
+receiver#com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver
+ADDED from [com.google.android.datatransport:transport-runtime:2.2.6] /home/rupa/.gradle/caches/transforms-4/76b48fe2b95b4e0e83785f9e713b6fd3/transformed/transport-runtime-2.2.6/AndroidManifest.xml:32:9-34:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.6] /home/rupa/.gradle/caches/transforms-4/76b48fe2b95b4e0e83785f9e713b6fd3/transformed/transport-runtime-2.2.6/AndroidManifest.xml:34:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.6] /home/rupa/.gradle/caches/transforms-4/76b48fe2b95b4e0e83785f9e713b6fd3/transformed/transport-runtime-2.2.6/AndroidManifest.xml:33:13-132

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="authvault_cyan">#00BCD4</color>
+    <color name="authvault_dark_navy">#0D1B2A</color>
+    <color name="authvault_deep_blue">#1565C0</color>
+    <color name="authvault_light_gray">#F5F5F5</color>
+    <color name="authvault_white">#FFFFFF</color>
+    <style name="Theme.AuthVault" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/black</item>
+    </style>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="authvault_deep_blue">#1565C0</color>
+    <color name="authvault_cyan">#00BCD4</color>
+    <color name="authvault_white">#FFFFFF</color>
+    <color name="authvault_light_gray">#F5F5F5</color>
+    <color name="authvault_dark_navy">#0D1B2A</color>
+</resources>
