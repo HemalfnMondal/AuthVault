@@ -4,6 +4,7 @@ import subprocess
 import sys
 from io import BytesIO
 from pathlib import Path
+import tempfile
 
 
 def ensure_pip() -> None:
@@ -22,18 +23,25 @@ def ensure_pip() -> None:
         ) from exc
 
 
-def ensure_package(module_name: str, pip_name: str) -> None:
+def ensure_package(module_name: str, pip_name: str) -> bool:
     try:
         importlib.import_module(module_name)
+        return True
     except ImportError:
-        ensure_pip()
-        subprocess.check_call([sys.executable, "-m", "pip", "install", pip_name])
+        try:
+            ensure_pip()
+            subprocess.check_call([sys.executable, "-m", "pip", "install", pip_name])
+            importlib.import_module(module_name)
+            return True
+        except Exception:
+            return False
 
 
-ensure_package("cairosvg", "cairosvg")
+HAS_CAIROSVG = ensure_package("cairosvg", "cairosvg")
 ensure_package("PIL", "Pillow")
 
-import cairosvg  # noqa: E402
+if HAS_CAIROSVG:
+    import cairosvg  # noqa: E402
 from PIL import Image, ImageDraw  # noqa: E402
 
 SVG_ICON = """<svg viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">
@@ -50,13 +58,48 @@ SIZES = {
     "xxxhdpi": 192,
 }
 
+PADDING_RATIO = 0.12
+
 
 def render_svg(size: int) -> Image.Image:
-    png_data = cairosvg.svg2png(bytestring=SVG_ICON.encode("utf-8"), output_width=size, output_height=size)
-    image = Image.open(BytesIO(png_data)).convert("RGBA")
-    if image.size != (size, size):
-        image = image.resize((size, size), Image.Resampling.LANCZOS)
+    if HAS_CAIROSVG:
+        png_data = cairosvg.svg2png(bytestring=SVG_ICON.encode("utf-8"), output_width=size, output_height=size)
+        image = Image.open(BytesIO(png_data)).convert("RGBA")
+        if image.size != (size, size):
+            image = image.resize((size, size), Image.Resampling.LANCZOS)
+        return image
+
+    with tempfile.NamedTemporaryFile("w", suffix=".svg", delete=False) as svg_file:
+        svg_file.write(SVG_ICON)
+        svg_path = Path(svg_file.name)
+    with tempfile.NamedTemporaryFile(suffix=".png", delete=False) as png_file:
+        png_path = Path(png_file.name)
+
+    subprocess.check_call([
+        "convert",
+        "-background",
+        "white",
+        str(svg_path),
+        "-resize",
+        f"{size}x{size}",
+        str(png_path),
+    ])
+    image = Image.open(png_path).convert("RGBA")
+    try:
+        svg_path.unlink(missing_ok=True)
+        png_path.unlink(missing_ok=True)
+    except Exception:
+        pass
     return image
+
+
+def apply_padding(image: Image.Image, size: int) -> Image.Image:
+    pad = int(round(size * PADDING_RATIO))
+    inner = max(1, size - (pad * 2))
+    resized = image.resize((inner, inner), Image.Resampling.LANCZOS)
+    canvas = Image.new("RGBA", (size, size), (255, 255, 255, 255))
+    canvas.paste(resized, (pad, pad), resized)
+    return canvas
 
 
 def make_round(image: Image.Image) -> Image.Image:
@@ -75,7 +118,7 @@ def main() -> None:
         mipmap_dir = root / f"mipmap-{density}"
         mipmap_dir.mkdir(parents=True, exist_ok=True)
 
-        standard = render_svg(size)
+        standard = apply_padding(render_svg(size), size)
         standard.save(mipmap_dir / "ic_launcher.png")
 
         round_icon = make_round(standard)

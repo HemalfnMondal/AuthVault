@@ -1,8 +1,8 @@
 # AuthVault
 
-AuthVault is an Android two-factor authentication app built with Kotlin, Jetpack Compose, Room, Hilt, CameraX, ML Kit, ZXing, Coil, and SQLCipher.
+AuthVault is an Android two-factor authentication app for managing TOTP and HOTP accounts locally.
 
-It is designed to store TOTP/HOTP accounts locally, scan QR codes from the camera or from images, and protect access with biometric app lock.
+It is built with Kotlin, Jetpack Compose, Room, Hilt, CameraX, ML Kit, ZXing, Coil, DataStore, and SQLCipher.
 
 ## Features
 
@@ -12,11 +12,13 @@ It is designed to store TOTP/HOTP accounts locally, scan QR codes from the camer
 - View live TOTP/HOTP codes with countdown rings
 - Copy codes to the clipboard
 - Edit saved accounts
+- View account details and generated transfer QR codes
 - Reorder and delete accounts
-- Generate and show account QR codes for transfer
 - Optional biometric app lock
+- Security settings for app lock and screenshot control
 - Encrypted local database with SQLCipher
 - Backup and restore support
+- Custom launcher icon and polished UI
 
 ## Screenshots
 
@@ -37,6 +39,13 @@ Add screenshots here if you want to show the UI on GitHub.
 - DataStore
 - SQLCipher
 - Biometric Prompt
+
+## Security And Privacy
+
+- App lock can be enabled from Settings
+- Screenshot and screen recording behavior can be controlled from Security settings
+- Sensitive secret values are protected in the edit and detail flows
+- Account data is stored locally on the device
 
 ## Requirements
 
@@ -81,6 +90,7 @@ AuthVault uses these Android permissions:
 - `INTERNET` for loading service icons
 - `CAMERA` for QR scanning
 - `USE_BIOMETRIC` and `USE_FINGERPRINT` for app lock
+- `FOREGROUND_SERVICE` and `FOREGROUND_SERVICE_MEDIA_PROJECTION` for screen sharing support
 - `VIBRATE` for haptic feedback
 
 ## Notes
@@ -88,6 +98,8 @@ AuthVault uses these Android permissions:
 - Account data is stored locally on the device.
 - QR icons are loaded from Simple Icons with SVG support enabled in Coil.
 - If you plan to publish this publicly on GitHub, consider adding a license file such as MIT, Apache 2.0, or GPL depending on your intent.
+- The app includes a custom launcher icon and adaptive icon assets.
+- Build output is generated with the local Gradle installation in this workspace.
 
 ## License
 

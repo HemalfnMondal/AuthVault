@@ -47,6 +47,8 @@ class SettingsViewModel @Inject constructor(
     fun setAutoLockTimeout(minutes: Int) = update { it.copy(autoLockTimeoutMinutes = minutes) }
     fun setAutoClearClipboard(enabled: Boolean) = update { it.copy(autoClearClipboard = enabled) }
     fun setClipboardDelay(seconds: Int) = update { it.copy(clipboardClearDelaySeconds = seconds) }
+    fun setAllowScreenshots(enabled: Boolean) = update { it.copy(allowScreenshots = enabled) }
+    fun markScreenshotWarningShown() = update { it.copy(screenshotWarningShown = true) }
     fun setSortOrder(order: String) = update { it.copy(sortOrder = order) }
     fun setDefaultAlgorithm(algorithm: String) = update { it.copy(defaultAlgorithm = algorithm) }
     fun setDefaultDigits(digits: Int) = update { it.copy(defaultDigits = digits) }

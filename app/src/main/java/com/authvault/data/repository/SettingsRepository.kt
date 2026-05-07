@@ -16,6 +16,8 @@ data class SettingsState(
     val autoLockTimeoutMinutes: Int = 1,
     val autoClearClipboard: Boolean = true,
     val clipboardClearDelaySeconds: Int = 30,
+    val allowScreenshots: Boolean = false,
+    val screenshotWarningShown: Boolean = false,
     val sortOrder: String = "manual",
     val defaultAlgorithm: String = "SHA1",
     val defaultDigits: Int = 6
@@ -30,6 +32,8 @@ class SettingsRepository @Inject constructor(
         val AUTO_LOCK = intPreferencesKey("auto_lock_minutes")
         val AUTO_CLEAR = booleanPreferencesKey("auto_clear")
         val CLIP_DELAY = intPreferencesKey("clip_delay")
+        val ALLOW_SCREENSHOTS = booleanPreferencesKey("allow_screenshots")
+        val SCREENSHOT_WARNING_SHOWN = booleanPreferencesKey("screenshot_warning_shown")
         val SORT_ORDER = stringPreferencesKey("sort_order")
         val DEFAULT_ALG = stringPreferencesKey("default_alg")
         val DEFAULT_DIGITS = intPreferencesKey("default_digits")
@@ -41,6 +45,8 @@ class SettingsRepository @Inject constructor(
             autoLockTimeoutMinutes = prefs[Keys.AUTO_LOCK] ?: 1,
             autoClearClipboard = prefs[Keys.AUTO_CLEAR] ?: true,
             clipboardClearDelaySeconds = prefs[Keys.CLIP_DELAY] ?: 30,
+            allowScreenshots = prefs[Keys.ALLOW_SCREENSHOTS] ?: false,
+            screenshotWarningShown = prefs[Keys.SCREENSHOT_WARNING_SHOWN] ?: false,
             sortOrder = prefs[Keys.SORT_ORDER] ?: "manual",
             defaultAlgorithm = prefs[Keys.DEFAULT_ALG] ?: "SHA1",
             defaultDigits = prefs[Keys.DEFAULT_DIGITS] ?: 6
@@ -55,6 +61,8 @@ class SettingsRepository @Inject constructor(
                 autoLockTimeoutMinutes = prefs[Keys.AUTO_LOCK] ?: 1,
                 autoClearClipboard = prefs[Keys.AUTO_CLEAR] ?: true,
                 clipboardClearDelaySeconds = prefs[Keys.CLIP_DELAY] ?: 30,
+                allowScreenshots = prefs[Keys.ALLOW_SCREENSHOTS] ?: false,
+                screenshotWarningShown = prefs[Keys.SCREENSHOT_WARNING_SHOWN] ?: false,
                 sortOrder = prefs[Keys.SORT_ORDER] ?: "manual",
                 defaultAlgorithm = prefs[Keys.DEFAULT_ALG] ?: "SHA1",
                 defaultDigits = prefs[Keys.DEFAULT_DIGITS] ?: 6
@@ -64,6 +72,8 @@ class SettingsRepository @Inject constructor(
             prefs[Keys.AUTO_LOCK] = updated.autoLockTimeoutMinutes
             prefs[Keys.AUTO_CLEAR] = updated.autoClearClipboard
             prefs[Keys.CLIP_DELAY] = updated.clipboardClearDelaySeconds
+            prefs[Keys.ALLOW_SCREENSHOTS] = updated.allowScreenshots
+            prefs[Keys.SCREENSHOT_WARNING_SHOWN] = updated.screenshotWarningShown
             prefs[Keys.SORT_ORDER] = updated.sortOrder
             prefs[Keys.DEFAULT_ALG] = updated.defaultAlgorithm
             prefs[Keys.DEFAULT_DIGITS] = updated.defaultDigits

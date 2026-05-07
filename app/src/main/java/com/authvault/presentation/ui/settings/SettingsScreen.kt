@@ -1,6 +1,7 @@
 package com.authvault.presentation.ui.settings
 
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -24,6 +25,8 @@ import androidx.compose.material3.Switch
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.material3.TopAppBar
+import androidx.compose.material3.SnackbarHost
+import androidx.compose.material3.SnackbarHostState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
@@ -49,8 +52,11 @@ fun SettingsScreen(
 ) {
     val settings by viewModel.settingsState.collectAsState()
     var showLicenses by remember { mutableStateOf(false) }
+    var showScreenshotWarning by remember { mutableStateOf(false) }
+    val snackbarHostState = remember { SnackbarHostState() }
 
     Scaffold(
+        snackbarHost = { SnackbarHost(hostState = snackbarHostState) },
         topBar = {
             TopAppBar(
                 title = { Text("Settings") },
@@ -85,6 +91,20 @@ fun SettingsScreen(
                     labelFor = { if (it == 1) "Immediately" else "$it minutes" }
                 )
             }
+            SettingSwitchRow(
+                title = "Allow Screenshots",
+                subtitle = "Allow screenshots and screen recording",
+                checked = settings.allowScreenshots,
+                onCheckedChange = { enabled ->
+                    if (enabled && !settings.screenshotWarningShown) {
+                        showScreenshotWarning = true
+                    } else {
+                        viewModel.setAllowScreenshots(enabled)
+                    }
+                }
+            )
+
+            SectionHeader("Privacy")
             SettingSwitchRow(
                 title = "Auto-clear clipboard",
                 checked = settings.autoClearClipboard,
@@ -141,6 +161,26 @@ fun SettingsScreen(
                     text = { Text("Jetpack Compose, Hilt, Room, Coil, CameraX, ML Kit, ZXing, SQLCipher, Commons Codec, and AndroidX libraries.") }
                 )
             }
+
+            if (showScreenshotWarning) {
+                androidx.compose.material3.AlertDialog(
+                    onDismissRequest = { showScreenshotWarning = false },
+                    title = { Text("Allow screenshots?") },
+                    text = {
+                        Text("Turning this on allows other apps and people to see your 2FA codes in screenshots and screen recordings.")
+                    },
+                    confirmButton = {
+                        TextButton(onClick = {
+                            showScreenshotWarning = false
+                            viewModel.markScreenshotWarningShown()
+                            viewModel.setAllowScreenshots(true)
+                        }) { Text("Allow") }
+                    },
+                    dismissButton = {
+                        TextButton(onClick = { showScreenshotWarning = false }) { Text("Cancel") }
+                    }
+                )
+            }
         }
     }
 }
@@ -153,11 +193,17 @@ private fun SectionHeader(title: String) {
 @Composable
 private fun SettingSwitchRow(
     title: String,
+    subtitle: String? = null,
     checked: Boolean,
     onCheckedChange: (Boolean) -> Unit
 ) {
     Row(verticalAlignment = Alignment.CenterVertically, modifier = Modifier.fillMaxWidth()) {
-        Text(title, modifier = Modifier.weight(1f))
+        Column(modifier = Modifier.weight(1f)) {
+            Text(title)
+            subtitle?.let {
+                Text(it, style = MaterialTheme.typography.bodySmall)
+            }
+        }
         Switch(checked = checked, onCheckedChange = onCheckedChange)
     }
 }
