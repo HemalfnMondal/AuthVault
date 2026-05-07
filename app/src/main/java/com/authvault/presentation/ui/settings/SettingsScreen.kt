@@ -30,22 +30,24 @@ import androidx.compose.material3.SnackbarHostState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.authvault.BuildConfig
-import com.authvault.data.repository.SettingsState
+import com.authvault.presentation.ui.update.UpdateUiEvent
+import com.authvault.presentation.ui.update.UpdateViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun SettingsScreen(
     viewModel: SettingsViewModel = hiltViewModel(),
+    updateViewModel: UpdateViewModel = hiltViewModel(),
     onNavigateBack: () -> Unit,
     onExportBackup: () -> Unit,
     onImportBackup: () -> Unit
@@ -54,6 +56,14 @@ fun SettingsScreen(
     var showLicenses by remember { mutableStateOf(false) }
     var showScreenshotWarning by remember { mutableStateOf(false) }
     val snackbarHostState = remember { SnackbarHostState() }
+
+    LaunchedEffect(Unit) {
+        updateViewModel.uiEvents.collect { event ->
+            when (event) {
+                is UpdateUiEvent.ShowSnackbar -> snackbarHostState.showSnackbar(event.message)
+            }
+        }
+    }
 
     Scaffold(
         snackbarHost = { SnackbarHost(hostState = snackbarHostState) },
@@ -150,6 +160,13 @@ fun SettingsScreen(
             SectionHeader("About")
             Text("AuthVault")
             Text("Version ${BuildConfig.VERSION_NAME}")
+            androidx.compose.material3.ListItem(
+                headlineContent = { Text("Check for Updates") },
+                supportingContent = { Text("Current version shown as Version ${BuildConfig.VERSION_NAME}") },
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .clickable { updateViewModel.checkForUpdatesNow() }
+            )
             Text("A simple and reliable authenticator app for storing and generating 2FA codes.")
             TextButton(onClick = { showLicenses = true }) { Text("Open source licenses") }
 

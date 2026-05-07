@@ -2,6 +2,7 @@ package com.authvault.data.repository
 
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
+import androidx.datastore.preferences.core.longPreferencesKey
 import androidx.datastore.preferences.core.booleanPreferencesKey
 import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.intPreferencesKey
@@ -18,6 +19,7 @@ data class SettingsState(
     val clipboardClearDelaySeconds: Int = 30,
     val allowScreenshots: Boolean = false,
     val screenshotWarningShown: Boolean = false,
+    val lastUpdateCheckMillis: Long = 0L,
     val sortOrder: String = "manual",
     val defaultAlgorithm: String = "SHA1",
     val defaultDigits: Int = 6
@@ -34,6 +36,7 @@ class SettingsRepository @Inject constructor(
         val CLIP_DELAY = intPreferencesKey("clip_delay")
         val ALLOW_SCREENSHOTS = booleanPreferencesKey("allow_screenshots")
         val SCREENSHOT_WARNING_SHOWN = booleanPreferencesKey("screenshot_warning_shown")
+        val LAST_UPDATE_CHECK = longPreferencesKey("last_update_check")
         val SORT_ORDER = stringPreferencesKey("sort_order")
         val DEFAULT_ALG = stringPreferencesKey("default_alg")
         val DEFAULT_DIGITS = intPreferencesKey("default_digits")
@@ -47,6 +50,7 @@ class SettingsRepository @Inject constructor(
             clipboardClearDelaySeconds = prefs[Keys.CLIP_DELAY] ?: 30,
             allowScreenshots = prefs[Keys.ALLOW_SCREENSHOTS] ?: false,
             screenshotWarningShown = prefs[Keys.SCREENSHOT_WARNING_SHOWN] ?: false,
+            lastUpdateCheckMillis = prefs[Keys.LAST_UPDATE_CHECK] ?: 0L,
             sortOrder = prefs[Keys.SORT_ORDER] ?: "manual",
             defaultAlgorithm = prefs[Keys.DEFAULT_ALG] ?: "SHA1",
             defaultDigits = prefs[Keys.DEFAULT_DIGITS] ?: 6
@@ -54,7 +58,6 @@ class SettingsRepository @Inject constructor(
     }
 
     suspend fun update(transform: suspend (SettingsState) -> SettingsState) {
-        val current = state.map { it }.let { it }
         dataStore.edit { prefs ->
             val existing = SettingsState(
                 appLockEnabled = prefs[Keys.APP_LOCK] ?: false,
@@ -63,6 +66,7 @@ class SettingsRepository @Inject constructor(
                 clipboardClearDelaySeconds = prefs[Keys.CLIP_DELAY] ?: 30,
                 allowScreenshots = prefs[Keys.ALLOW_SCREENSHOTS] ?: false,
                 screenshotWarningShown = prefs[Keys.SCREENSHOT_WARNING_SHOWN] ?: false,
+                lastUpdateCheckMillis = prefs[Keys.LAST_UPDATE_CHECK] ?: 0L,
                 sortOrder = prefs[Keys.SORT_ORDER] ?: "manual",
                 defaultAlgorithm = prefs[Keys.DEFAULT_ALG] ?: "SHA1",
                 defaultDigits = prefs[Keys.DEFAULT_DIGITS] ?: 6
@@ -74,6 +78,7 @@ class SettingsRepository @Inject constructor(
             prefs[Keys.CLIP_DELAY] = updated.clipboardClearDelaySeconds
             prefs[Keys.ALLOW_SCREENSHOTS] = updated.allowScreenshots
             prefs[Keys.SCREENSHOT_WARNING_SHOWN] = updated.screenshotWarningShown
+            prefs[Keys.LAST_UPDATE_CHECK] = updated.lastUpdateCheckMillis
             prefs[Keys.SORT_ORDER] = updated.sortOrder
             prefs[Keys.DEFAULT_ALG] = updated.defaultAlgorithm
             prefs[Keys.DEFAULT_DIGITS] = updated.defaultDigits
