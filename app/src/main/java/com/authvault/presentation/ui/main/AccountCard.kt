@@ -18,9 +18,11 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.DeleteOutline
+import androidx.compose.material.icons.filled.ContentCopy
+import androidx.compose.material.icons.filled.Delete
 import androidx.compose.material.icons.filled.DragHandle
 import androidx.compose.material.icons.outlined.Edit
+import androidx.compose.material.icons.outlined.DeleteOutline
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Icon
@@ -28,23 +30,27 @@ import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.drawscope.Stroke
-import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.font.FontFamily
-import androidx.compose.runtime.getValue
-import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.authvault.presentation.model.AccountUiModel
 import com.authvault.presentation.theme.Cyan
 import com.authvault.presentation.theme.DeepBlue
 import com.authvault.presentation.theme.MutedTextDark
+import com.authvault.presentation.theme.CardDark
+import com.authvault.presentation.theme.CardLight
+import com.authvault.presentation.theme.DividerDark
+import com.authvault.presentation.theme.DividerLight
 import com.authvault.presentation.ui.common.ServiceIconView
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.BorderStroke
@@ -61,13 +67,13 @@ fun AccountCard(
     onDragHandle: Modifier = Modifier
 ) {
     val isDarkMode = isSystemInDarkTheme()
-    val cardBackground = if (isDarkMode) Color(0xFF1A2744) else Color.White
-    val cardBorder = Color(0xFF00BCD4)
-    val issuerTextColor = if (isDarkMode) Color(0xFFE0E0E0) else Color(0xFF1A1A1A)
-    val accountTextColor = if (isDarkMode) Color(0xFF9E9E9E) else Color(0xFF757575)
-    val codeTextColor = Color(0xFF00BCD4)
-    val deleteIconColor = if (isDarkMode) Color(0xFFEF5350) else Color(0xFFE53935)
-    val dividerColor = if (isDarkMode) Color(0xFF2A3A5C) else Color(0xFFEEEEEE)
+    val cardBackground = if (isDarkMode) CardDark else CardLight
+    val cardBorder = if (isDarkMode) Color(0xFF424242) else Color(0xFFE0E0E0)
+    val issuerTextColor = if (isDarkMode) Color(0xFFE0E0E0) else Color(0xFF212121)
+    val accountTextColor = if (isDarkMode) Color(0xFFB0BEC5) else Color(0xFF757575)
+    val codeTextColor = if (isDarkMode) Cyan else DeepBlue
+    val deleteIconColor = if (isDarkMode) Color(0xFFEF5350) else Color(0xFFD32F2F)
+    val dividerColor = if (isDarkMode) Color(0xFF2C2C2C) else Color(0xFFE0E0E0)
 
     Card(
         modifier = Modifier
@@ -135,7 +141,7 @@ fun AccountCard(
                 Spacer(modifier = Modifier.height(2.dp))
                 IconButton(onClick = onDelete, modifier = Modifier.size(24.dp)) {
                     Icon(
-                        imageVector = Icons.Default.DeleteOutline,
+                        imageVector = Icons.Outlined.DeleteOutline,
                         contentDescription = "Delete account",
                         tint = deleteIconColor,
                         modifier = Modifier.size(18.dp)
@@ -157,10 +163,11 @@ fun AccountCard(
 
 @Composable
 private fun CountdownRing(countdown: Int, period: Int, size: Dp = 44.dp, modifier: Modifier = Modifier) {
+    val isDarkMode = isSystemInDarkTheme()
     val progress = countdown.toFloat() / period.toFloat()
 
     val ringColor = when {
-        countdown > 10 -> Color(0xFF00BCD4)
+        countdown > 10 -> if (isDarkMode) Cyan else DeepBlue
         countdown > 5 -> Color(0xFFFF9800)
         else -> Color(0xFFEF5350)
     }
@@ -168,8 +175,7 @@ private fun CountdownRing(countdown: Int, period: Int, size: Dp = 44.dp, modifie
     val animatedColor by animateColorAsState(targetValue = ringColor, animationSpec = tween(durationMillis = 500))
     val animatedProgress by animateFloatAsState(targetValue = progress, animationSpec = tween(durationMillis = 800))
 
-    val isDarkMode = isSystemInDarkTheme()
-    val trackColor = if (isDarkMode) Color(0xFF2A3A5C) else Color(0xFFE0E0E0)
+    val trackColor = if (isDarkMode) DividerDark else DividerLight
 
     Box(contentAlignment = Alignment.Center, modifier = modifier.size(size)) {
         Canvas(modifier = Modifier.size(size)) {
@@ -185,17 +191,17 @@ private fun CountdownRing(countdown: Int, period: Int, size: Dp = 44.dp, modifie
                 useCenter = false,
                 topLeft = topLeft,
                 size = arcSize,
-                style = Stroke(width = strokeWidth, cap = StrokeCap.Round)
+                style = Stroke(width = strokeWidth)
             )
 
             drawArc(
                 color = animatedColor,
                 startAngle = -90f,
-                sweepAngle = 360f * animatedProgress,
+                sweepAngle = 360f * animatedProgress.toFloat(),
                 useCenter = false,
                 topLeft = topLeft,
                 size = arcSize,
-                style = Stroke(width = strokeWidth, cap = StrokeCap.Round)
+                style = Stroke(width = strokeWidth)
             )
         }
 

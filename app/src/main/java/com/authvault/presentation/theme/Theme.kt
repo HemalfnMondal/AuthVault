@@ -12,32 +12,32 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 
 private val LightColors = lightColorScheme(
-    primary = Color(0xFF1565C0),
+    primary = Color(0xFF1976D2),
     onPrimary = Color.White,
     primaryContainer = Color(0xFFE3F2FD),
-    secondary = Color(0xFF00BCD4),
-    background = Color(0xFFF5F5F5),
-    surface = Color.White,
-    surfaceVariant = Color(0xFFF0F4F8),
-    onBackground = Color(0xFF1A1A1A),
-    onSurface = Color(0xFF1A1A1A),
+    secondary = Color(0xFF03A9F4),
+    background = Color(0xFFFAFAFA),
+    surface = Color(0xFFFFFFFF),
+    surfaceVariant = Color(0xFFF5F5F5),
+    onBackground = Color(0xFF212121),
+    onSurface = Color(0xFF212121),
     onSurfaceVariant = Color(0xFF757575),
-    outline = Color(0xFFE0E0E0),
-    error = Color(0xFFE53935)
+    outline = Color(0xFFBDBDBD),
+    error = Color(0xFFD32F2F)
 )
 
 private val DarkColors = darkColorScheme(
-    primary = Color(0xFF00BCD4),
-    onPrimary = Color(0xFF003544),
-    primaryContainer = Color(0xFF004D5E),
-    secondary = Color(0xFF1565C0),
-    background = Color(0xFF0D1B2A),
-    surface = Color(0xFF1A2744),
-    surfaceVariant = Color(0xFF1E2E4A),
+    primary = Color(0xFF03A9F4),
+    onPrimary = Color(0xFF000000),
+    primaryContainer = Color(0xFF0D47A1),
+    secondary = Color(0xFF1976D2),
+    background = Color(0xFF121212),
+    surface = Color(0xFF1E1E1E),
+    surfaceVariant = Color(0xFF2C2C2C),
     onBackground = Color(0xFFE0E0E0),
     onSurface = Color(0xFFE0E0E0),
-    onSurfaceVariant = Color(0xFF9E9E9E),
-    outline = Color(0xFF2A3A5C),
+    onSurfaceVariant = Color(0xFFB0BEC5),
+    outline = Color(0xFF424242),
     error = Color(0xFFEF5350)
 )
 

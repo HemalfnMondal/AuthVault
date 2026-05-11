@@ -292,7 +292,7 @@ private fun EmptyState(onAddAccount: () -> Unit) {
             imageVector = Icons.Default.Lock,
             contentDescription = null,
             modifier = Modifier.size(56.dp),
-            tint = Cyan
+            tint = MaterialTheme.colorScheme.primary
         )
         Spacer(modifier = Modifier.height(12.dp))
         Text(text = "No accounts yet", style = MaterialTheme.typography.titleMedium)

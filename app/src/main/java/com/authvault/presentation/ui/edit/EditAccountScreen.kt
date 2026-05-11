@@ -109,7 +109,7 @@ fun EditAccountScreen(
                 verticalArrangement = Arrangement.Center,
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
-                CircularProgressIndicator(color = Cyan)
+                CircularProgressIndicator(color = MaterialTheme.colorScheme.primary)
             }
         } else {
             val otpauth = buildOtpAuthUri(state)
@@ -233,7 +233,7 @@ private fun SectionCard(
     content: @Composable () -> Unit
 ) {
     Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
-        Text(text = title, style = MaterialTheme.typography.titleMedium, color = Cyan)
+        Text(text = title, style = MaterialTheme.typography.titleMedium, color = MaterialTheme.colorScheme.primary)
         Card {
             Column(
                 modifier = Modifier
@@ -261,13 +261,13 @@ private fun ReadOnlyRow(label: String, value: String) {
 
 @Composable
 private fun outlinedColors() = OutlinedTextFieldDefaults.colors(
-    focusedBorderColor = Cyan,
-    focusedLabelColor = Cyan,
-    cursorColor = Cyan,
-    focusedTrailingIconColor = Cyan,
+    focusedBorderColor = MaterialTheme.colorScheme.primary,
+    focusedLabelColor = MaterialTheme.colorScheme.primary,
+    cursorColor = MaterialTheme.colorScheme.primary,
+    focusedTrailingIconColor = MaterialTheme.colorScheme.primary,
     focusedTextColor = MaterialTheme.colorScheme.onSurface,
     unfocusedTextColor = MaterialTheme.colorScheme.onSurface,
-    errorCursorColor = Color.Red
+    errorCursorColor = MaterialTheme.colorScheme.error
 )
 
 private fun buildOtpAuthUri(state: EditAccountUiState): String {

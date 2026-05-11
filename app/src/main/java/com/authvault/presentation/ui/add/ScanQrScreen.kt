@@ -171,7 +171,7 @@ fun ViewfinderOverlay(modifier: Modifier = Modifier) {
     val boxSize = 260.dp
     val cornerLength = 36.dp
     val cornerStroke = 4.dp
-    val cornerColor = Color(0xFF00BCD4)
+    val cornerColor = Color(0xFF03A9F4)
 
     Box(modifier = modifier.size(boxSize), contentAlignment = Alignment.Center) {
         Canvas(modifier = Modifier.size(boxSize)) {
