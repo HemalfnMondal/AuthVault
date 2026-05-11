@@ -1,0 +1,26 @@
+# Build artifacts
+app/build/
+.gradle/
+build/
+
+# Gradle
+gradle-*/
+
+# APK files
+*.apk
+*.aab
+
+# Local configuration
+local.properties
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Kotlin
+*.kotlin_module
